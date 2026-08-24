@@ -1521,6 +1521,15 @@ body:not(.is-admin) .extra-item-remove {
     grid-template-columns: 1fr;
     gap: 16px;
   }
+
+  .system-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .system-classification {
+    text-align: left;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1593,6 +1602,47 @@ body:not(.is-admin) .extra-item-remove {
   .contact-display {
     padding: 32px 24px;
   }
+
+  /* Mobile optimizations */
+  .stellar-system {
+    padding: 24px 20px;
+  }
+
+  .system-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .tech-orbit {
+    gap: 6px;
+  }
+
+  .tech-node {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  .github-profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-info {
+    text-align: center;
+  }
+
+  .badge-frame {
+    width: 80px;
+    height: 80px;
+  }
+
+  .orbital-ring {
+    width: 100px;
+    height: 100px;
+    top: -10px;
+    left: -10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1614,6 +1664,86 @@ body:not(.is-admin) .extra-item-remove {
 
   .chart-course-btn {
     padding: 20px 32px;
+  }
+
+  .readout-item {
+    padding: 16px 12px;
+  }
+
+  .readout-value {
+    font-size: 24px;
+  }
+
+  .observatory-panel {
+    padding: 20px 16px;
+  }
+
+  .star-cluster {
+    padding: 20px 16px;
+  }
+
+  .cluster-stars {
+    gap: 8px;
+  }
+
+  .constellation-star {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+
+  .achievement-category {
+    padding: 24px 16px;
+  }
+
+  .catalog-number {
+    font-size: 20px;
+  }
+
+  .celestial-nav {
+    display: none;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .stellar-system:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .stellar-marker:hover {
+    transform: none;
+  }
+
+  .tech-node:hover {
+    transform: none;
+  }
+
+  .constellation-star:hover {
+    transform: none;
+  }
+
+  .coord-link:hover {
+    transform: none;
+  }
+
+  /* Increase tap targets */
+  .system-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .coord-link {
+    min-height: 48px;
+  }
+
+  .repo-item {
+    min-height: 48px;
+  }
+
+  .constellation-star {
+    min-height: 36px;
   }
 }
 
