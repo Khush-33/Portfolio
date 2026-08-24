@@ -92,7 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const catalog = systemEl.querySelector('.catalog-number')?.textContent || data.systemId.toUpperCase();
     const classType = systemEl.querySelector('.class-type')?.textContent || '';
     const classDesc = systemEl.querySelector('.class-desc')?.textContent || '';
-    const screenshotSrc = systemEl.querySelector('.system-screenshot img')?.src || '';
+    const screenshotEl = systemEl.querySelector('.system-screenshot img');
+    const screenshotPlaceholder = systemEl.querySelector('.system-screenshot .screenshot-placeholder');
+    const screenshotSrc = screenshotEl?.src || (screenshotPlaceholder ? '' : '');
     const descriptionItems = Array.from(systemEl.querySelectorAll('.system-description li')).map(li => li.textContent);
     const techNodes = Array.from(systemEl.querySelectorAll('.tech-node')).map(node => ({
       text: node.textContent,
@@ -133,11 +135,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = modals.cert;
     if (!modal) return;
 
-    const img = modal.querySelector('.lightbox-content img');
+    const lightboxContent = modal.querySelector('.lightbox-content');
     const verifyLink = modal.querySelector('.lightbox-verify');
 
-    img.src = data.imageSrc;
-    img.alt = data.alt || 'Certificate';
+    if (data.isPlaceholder || !data.imageSrc) {
+      lightboxContent.innerHTML = `
+        <div class="lightbox-placeholder">
+          <span class="placeholder-icon">↑</span>
+          <span class="placeholder-text">${data.alt || 'Add Certificate'}</span>
+        </div>
+      `;
+    } else {
+      lightboxContent.innerHTML = `<img src="${data.imageSrc}" alt="${data.alt || 'Certificate'}" loading="lazy">`;
+    }
     verifyLink.href = data.verifyUrl || '#';
   }
 
@@ -146,11 +156,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = modals.pub;
     if (!modal) return;
 
-    const img = modal.querySelector('.lightbox-content img');
+    const lightboxContent = modal.querySelector('.lightbox-content');
     const doiLink = modal.querySelector('.lightbox-doi');
 
-    img.src = data.imageSrc;
-    img.alt = data.alt || 'Publication Cover';
+    if (data.isPlaceholder || !data.imageSrc) {
+      lightboxContent.innerHTML = `
+        <div class="lightbox-placeholder">
+          <span class="placeholder-icon">↑</span>
+          <span class="placeholder-text">${data.alt || 'Add Cover'}</span>
+        </div>
+      `;
+    } else {
+      lightboxContent.innerHTML = `<img src="${data.imageSrc}" alt="${data.alt || 'Publication Cover'}" loading="lazy">`;
+    }
     doiLink.href = data.doiUrl || '#';
   }
 
@@ -159,9 +177,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = modals.screenshot;
     if (!modal) return;
 
-    const img = modal.querySelector('.lightbox-content img');
-    img.src = data.imageSrc;
-    img.alt = data.alt || 'Project Screenshot';
+    const lightboxContent = modal.querySelector('.lightbox-content');
+
+    if (data.isPlaceholder || !data.imageSrc) {
+      lightboxContent.innerHTML = `
+        <div class="lightbox-placeholder">
+          <span class="placeholder-icon">↑</span>
+          <span class="placeholder-text">${data.alt || 'Add Screenshot'}</span>
+        </div>
+      `;
+    } else {
+      lightboxContent.innerHTML = `<img src="${data.imageSrc}" alt="${data.alt || 'Project Screenshot'}" loading="lazy">`;
+    }
   }
 
   // ---- Event Listeners for Opening Modals ----
@@ -189,11 +216,22 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.screenshot-expand').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
-      const img = btn.closest('.system-screenshot').querySelector('img');
-      openModal('screenshot', {
-        imageSrc: img.src,
-        alt: img.alt
-      });
+      const container = btn.closest('.system-screenshot');
+      const img = container.querySelector('img');
+      const placeholder = container.querySelector('.screenshot-placeholder');
+      if (placeholder) {
+        // Show placeholder in lightbox too
+        openModal('screenshot', {
+          imageSrc: '',
+          alt: 'Add Screenshot',
+          isPlaceholder: true
+        });
+      } else if (img) {
+        openModal('screenshot', {
+          imageSrc: img.src,
+          alt: img.alt
+        });
+      }
     });
   });
 
@@ -201,12 +239,22 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.cert-thumbnail').forEach(thumb => {
     thumb.addEventListener('click', () => {
       const img = thumb.querySelector('img');
+      const placeholder = thumb.querySelector('.cert-placeholder');
       const verifyLink = thumb.closest('.cert-with-image').querySelector('.cert-verify');
-      openModal('cert', {
-        imageSrc: img.src,
-        alt: img.alt,
-        verifyUrl: verifyLink?.href || '#'
-      });
+      if (placeholder) {
+        openModal('cert', {
+          imageSrc: '',
+          alt: 'Add Certificate',
+          verifyUrl: verifyLink?.href || '#',
+          isPlaceholder: true
+        });
+      } else if (img) {
+        openModal('cert', {
+          imageSrc: img.src,
+          alt: img.alt,
+          verifyUrl: verifyLink?.href || '#'
+        });
+      }
     });
 
     thumb.addEventListener('keydown', (e) => {
@@ -221,12 +269,22 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.pub-cover').forEach(cover => {
     cover.addEventListener('click', () => {
       const img = cover.querySelector('img');
+      const placeholder = cover.querySelector('.pub-placeholder');
       const doiLink = cover.closest('.pub-with-image').querySelector('.pub-doi');
-      openModal('pub', {
-        imageSrc: img.src,
-        alt: img.alt,
-        doiUrl: doiLink?.href || '#'
-      });
+      if (placeholder) {
+        openModal('pub', {
+          imageSrc: '',
+          alt: 'Add Cover',
+          doiUrl: doiLink?.href || '#',
+          isPlaceholder: true
+        });
+      } else if (img) {
+        openModal('pub', {
+          imageSrc: img.src,
+          alt: img.alt,
+          doiUrl: doiLink?.href || '#'
+        });
+      }
     });
 
     cover.addEventListener('keydown', (e) => {
