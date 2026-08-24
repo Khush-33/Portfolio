@@ -3,463 +3,833 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Khush Jain — Systems & Full-Stack Engineer</title>
+<title>Khush Jain — Interstellar Cartography Archive</title>
+<meta name="description" content="CS (AI & ML) engineer building real-time systems, OS schedulers, and ML pipelines. VIT Pune, 9.33 CGPA. Open to internships.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500;600;700&family=Satoshi:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!--
+DIRECTION CONTRACT (seed: 83bfcee4)
 
-<div class="bg-grid"></div>
+THESIS: Khush's technical work charted as an interstellar navigation archive where each project is a discovered stellar system, skills map to spectral classifications, and the whole portfolio reads as a systematic exploration of technical space. Refuses the generic dark terminal aesthetic and refuses the standard card grid by using celestial coordinate frameworks and orbital navigation.
 
-<header>
-  <nav>
-    <div class="logo"><span class="dot"></span>khush_jain</div>
-    <div class="navlinks">
-      <a href="#home"><span class="idx">01</span>home</a>
-      <a href="#about"><span class="idx">02</span>about</a>
-      <a href="#skills"><span class="idx">03</span>skills</a>
-      <a href="#github"><span class="idx">04</span>github</a>
-      <a href="#projects"><span class="idx">05</span>projects</a>
-      <a href="#achievements"><span class="idx">06</span>achievements</a>
-      <a href="#contact"><span class="idx">07</span>contact</a>
+OWN-WORLD: Deep void-black (#0a0d14) ground with true stellar photography (Hubble deep field, not generated nebulae). Coordinate grid overlays in dim cyan (#1a4d5c). Stellar objects use spectral classification palette: hot blue-white for systems projects (#a8c5e6), warm yellow for full-stack (#f4d58d), orange-red for ML work (#e67350), deep blue for databases (#4a7c9e). Large celestial catalog numbers in Geist Mono. Navigation markers as traditional celestial compass roses in metallic silver (#c5d1d9). Metrics displayed as glowing spectral readouts. Geist Mono for coordinates and data, Satoshi for headers.
+
+STORY: Recruiter enters a cartography archive interface showing Khush as mission specialist with his technical systems charted across stellar space. Scrolling navigates through galactic coordinate sections: Mission Specialist (hero with photo), Charted Systems (6 major projects as stellar objects), Skills Constellation (tech stack as actual constellation), Achievement Markers (certifications/hackathons), GitHub Observatory (real-time activity), Contact Coordinates (literal celestial nav to Earth contact).
+
+FIRST VIEWPORT: Full viewport height star field (real astrophotography: Hubble deep field). Upper left: Khush's professional photograph as circular mission specialist badge (100px diameter) with name and title in orbital ring. Center-right: large celestial coordinate readout showing current portfolio "position" in RA/DEC format, below that 3-4 major project systems visible as labeled bright stars with catalog numbers (KJ-001, KJ-002, etc). Bottom: navigation compass rose showing portfolio sections as cardinal directions. Primary action: "Chart Course" button rendered as navigation plotting interface with metallic silver border and cyan glow. Scale is cinematic - star field feels vast, type is large and confident.
+
+FORM: Interstellar Cartography Archive, assigned position 6, seed key 83bfcee4.
+
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
+-->
+
+<!-- Celestial Background Layer -->
+<div class="star-field" aria-hidden="true"></div>
+<div class="coordinate-grid" aria-hidden="true"></div>
+
+<!-- Navigation Compass -->
+<nav class="celestial-nav" role="navigation" aria-label="Portfolio navigation">
+  <div class="compass-rose">
+    <div class="compass-center">
+      <span class="compass-label">NAV</span>
     </div>
-  </nav>
-</header>
+    <a href="#mission-specialist" class="compass-point north" data-bearing="0°">
+      <span class="bearing-label">000°</span>
+      <span class="section-label">Specialist</span>
+    </a>
+    <a href="#charted-systems" class="compass-point east" data-bearing="90°">
+      <span class="bearing-label">090°</span>
+      <span class="section-label">Systems</span>
+    </a>
+    <a href="#constellation" class="compass-point south" data-bearing="180°">
+      <span class="bearing-label">180°</span>
+      <span class="section-label">Skills</span>
+    </a>
+    <a href="#contact" class="compass-point west" data-bearing="270°">
+      <span class="bearing-label">270°</span>
+      <span class="section-label">Contact</span>
+    </a>
+  </div>
+</nav>
 
-<!-- HERO -->
-<section id="home" class="hero" style="border-top:none;padding-top:150px;">
-  <div class="wrap">
-    <div class="hero-top">
-      <div class="hero-left reveal">
-        <div class="eyebrow">process viewer — pid 1</div>
-        <h1 class="name">KHUSH<br><span class="accent">JAIN</span></h1>
-        <p class="role-line"><b>Systems &amp; full-stack engineer</b> building real-time production apps, OS-level schedulers, and ML forecasting pipelines. CSE (AI &amp; ML), VIT Pune.</p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">▶ view projects</a>
-          <a href="#contact" class="btn btn-ghost">↗ get in touch</a>
-          <a href="https://github.com/Khush-33" target="_blank" class="btn btn-ghost">⌘ github</a>
-        </div>
-        <div class="quickstats">
-          <div class="qstat"><div class="n">9.33</div><div class="l">cgpa</div></div>
-          <div class="qstat"><div class="n">150+</div><div class="l">leetcode solved</div></div>
-          <div class="qstat"><div class="n">15+</div><div class="l">hackathons</div></div>
-          <div class="qstat"><div class="n">6+</div><div class="l">shipped projects</div></div>
+<!-- Mission Specialist Hero -->
+<section id="mission-specialist" class="viewport-section">
+  <div class="mission-badge">
+    <div class="badge-frame">
+      <img src="WhatsApp Image 2026-08-24 at 11.58.45 AM.jpeg" alt="Khush Jain" class="specialist-photo">
+      <svg class="orbital-ring" viewBox="0 0 120 120" aria-hidden="true">
+        <circle cx="60" cy="60" r="56" fill="none" stroke="rgba(197, 209, 217, 0.3)" stroke-width="1"/>
+        <path id="name-path" d="M 60,60 m -54,0 a 54,54 0 1,1 108,0 a 54,54 0 1,1 -108,0" fill="none"/>
+        <text class="orbital-text">
+          <textPath href="#name-path" startOffset="25%">
+            KHUSH JAIN · MISSION SPECIALIST
+          </textPath>
+        </text>
+      </svg>
+    </div>
+    <div class="badge-designation">
+      <span class="catalog-prefix">SPEC-</span>
+      <span class="catalog-number">001</span>
+    </div>
+  </div>
+
+  <div class="coordinate-display">
+    <div class="coord-label">CURRENT POSITION</div>
+    <div class="coord-values">
+      <div class="coord-line">
+        <span class="coord-type">RA</span>
+        <span class="coord-value">18h 23m 47s</span>
+      </div>
+      <div class="coord-line">
+        <span class="coord-type">DEC</span>
+        <span class="coord-value">+73° 45' 12"</span>
+      </div>
+      <div class="coord-line">
+        <span class="coord-type">EPOCH</span>
+        <span class="coord-value">J2026.65</span>
+      </div>
+    </div>
+    <div class="specialist-designation">
+      <h1 class="specialist-title">Systems & Full-Stack Engineer</h1>
+      <p class="specialist-brief">Building real-time production apps, OS-level schedulers, and ML forecasting pipelines. CSE (AI & ML), VIT Pune.</p>
+    </div>
+  </div>
+
+  <div class="stellar-objects-preview">
+    <div class="preview-label">MAJOR SYSTEMS IN VIEW</div>
+    <div class="stellar-markers">
+      <a href="#system-kj001" class="stellar-marker systems-type" data-catalog="KJ-001">
+        <span class="marker-glow"></span>
+        <span class="marker-label">LiveAuction Pro</span>
+        <span class="marker-classification">Type-F · Full-Stack</span>
+      </a>
+      <a href="#system-kj002" class="stellar-marker systems-type" data-catalog="KJ-002">
+        <span class="marker-glow"></span>
+        <span class="marker-label">Eco-Cloud Scheduler</span>
+        <span class="marker-classification">Type-O · Systems</span>
+      </a>
+      <a href="#system-kj003" class="stellar-marker ml-type" data-catalog="KJ-003">
+        <span class="marker-glow"></span>
+        <span class="marker-label">Aircraft Engine Health</span>
+        <span class="marker-classification">Type-K · ML Pipeline</span>
+      </a>
+      <a href="#system-kj004" class="stellar-marker fullstack-type" data-catalog="KJ-004">
+        <span class="marker-glow"></span>
+        <span class="marker-label">Aspira Platform</span>
+        <span class="marker-classification">Type-G · Full-Stack</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="primary-action">
+    <a href="#contact" class="chart-course-btn">
+      <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+        <path d="M2 17l10 5 10-5"/>
+        <path d="M2 12l10 5 10-5"/>
+      </svg>
+      <span class="btn-text">Chart Course</span>
+      <span class="btn-subtext">Initiate Contact Protocol</span>
+    </a>
+  </div>
+
+  <!-- Spectral Readouts -->
+  <div class="spectral-readouts">
+    <div class="readout-item">
+      <div class="readout-value glow-systems">150+</div>
+      <div class="readout-label">LeetCode Solved</div>
+      <div class="readout-classification">Spectral Analysis</div>
+    </div>
+    <div class="readout-item">
+      <div class="readout-value glow-fullstack">9.33</div>
+      <div class="readout-label">CGPA</div>
+      <div class="readout-classification">Luminosity Class</div>
+    </div>
+    <div class="readout-item">
+      <div class="readout-value glow-ml">15+</div>
+      <div class="readout-label">Hackathons</div>
+      <div class="readout-classification">Event Catalog</div>
+    </div>
+    <div class="readout-item">
+      <div class="readout-value glow-db">6</div>
+      <div class="readout-label">Shipped Systems</div>
+      <div class="readout-classification">Magnitude Index</div>
+    </div>
+  </div>
+</section>
+
+<!-- Charted Systems (Projects) -->
+<section id="charted-systems" class="catalog-section">
+  <div class="section-header">
+    <h2 class="section-title">Charted Systems</h2>
+    <div class="catalog-meta">
+      <span class="meta-item">6 Primary Objects</span>
+      <span class="meta-sep">·</span>
+      <span class="meta-item">Spectral Range: O-M</span>
+    </div>
+  </div>
+
+  <div class="systems-grid">
+
+    <!-- System KJ-001 -->
+    <article id="system-kj001" class="stellar-system fullstack-type">
+      <div class="system-header">
+        <div class="catalog-number">KJ-001</div>
+        <div class="system-classification">
+          <span class="class-type">Type-F</span>
+          <span class="class-desc">Yellow Dwarf · Full-Stack</span>
         </div>
       </div>
+      <h3 class="system-name">LiveAuction Pro</h3>
+      <p class="system-designation">Real-Time Sports Auction Platform</p>
 
-      <div class="hero-right reveal">
-        <div class="terminal">
-          <div class="term-bar"><span></span><span></span><span></span><div class="term-title">khush@vit-pune: ~</div></div>
-          <div class="term-body" id="termBody"></div>
+      <div class="system-details">
+        <div class="detail-group">
+          <div class="detail-label">Core Systems</div>
+          <ul class="system-description">
+            <li>Full-stack real-time auction app (React, Firebase Firestore) for live multi-team player bidding with instant, multi-client sync</li>
+            <li>Role-based Admin/Viewer authentication with responsive, mobile-first UI for concurrent live sessions</li>
+            <li>Real-time "Max Safe Bid" calculator, back-end CRUD/business logic, and exportable auction reports (PPT)</li>
+          </ul>
+        </div>
+
+        <div class="orbital-rings">
+          <div class="ring-label">Technology Stack</div>
+          <div class="tech-orbit">
+            <span class="tech-node react">React</span>
+            <span class="tech-node firebase">Firebase</span>
+            <span class="tech-node vercel">Vercel</span>
+            <span class="tech-node cicd">CI/CD</span>
+          </div>
+        </div>
+
+        <div class="system-links">
+          <a href="https://proauction-livid.vercel.app/" target="_blank" class="system-link live">
+            <span class="link-icon">●</span>
+            <span>Live Deployment</span>
+          </a>
+          <a href="https://github.com/Khush-33" target="_blank" class="system-link repo">
+            <span class="link-icon">⌘</span>
+            <span>Repository</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- System KJ-002 -->
+    <article id="system-kj002" class="stellar-system systems-type">
+      <div class="system-header">
+        <div class="catalog-number">KJ-002</div>
+        <div class="system-classification">
+          <span class="class-type">Type-O</span>
+          <span class="class-desc">Blue Giant · Systems</span>
+        </div>
+      </div>
+      <h3 class="system-name">Eco-Cloud</h3>
+      <p class="system-designation">Carbon-Aware Data Center Scheduler</p>
+
+      <div class="system-details">
+        <div class="detail-group">
+          <div class="detail-label">Core Systems</div>
+          <ul class="system-description">
+            <li>C++/Python discrete-event simulation of data-center OS scheduler optimizing for carbon footprint and thermal efficiency</li>
+            <li>Core OS internals: 7-state process model, context switching, adaptive Round-Robin with dynamic quantum, Banker's Algorithm deadlock avoidance</li>
+            <li>Hand-built data structures: Fibonacci Heap ready queue, Splay Tree job cache, B-Tree log indexing, Huffman-coded log compression</li>
+            <li>Deep RL agent with ARIMA-based carbon-intensity forecasting to dynamically prioritize and preempt jobs</li>
+          </ul>
+        </div>
+
+        <div class="orbital-rings">
+          <div class="ring-label">Technology Stack</div>
+          <div class="tech-orbit">
+            <span class="tech-node cpp">C++</span>
+            <span class="tech-node python">Python</span>
+            <span class="tech-node rl">Reinforcement Learning</span>
+            <span class="tech-node os">OS Internals</span>
+          </div>
+        </div>
+
+        <div class="system-links">
+          <a href="https://github.com/Khush-33/Eco-Cloud" target="_blank" class="system-link repo">
+            <span class="link-icon">⌘</span>
+            <span>Repository</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- System KJ-003 -->
+    <article id="system-kj003" class="stellar-system ml-type">
+      <div class="system-header">
+        <div class="catalog-number">KJ-003</div>
+        <div class="system-classification">
+          <span class="class-type">Type-K</span>
+          <span class="class-desc">Orange Giant · ML Pipeline</span>
+        </div>
+      </div>
+      <h3 class="system-name">Aircraft Engine Health Monitoring</h3>
+      <p class="system-designation">Predictive Maintenance System</p>
+
+      <div class="system-details">
+        <div class="detail-group">
+          <div class="detail-label">Core Systems</div>
+          <ul class="system-description">
+            <li>Predictive-maintenance system on NASA C-MAPSS data (21 sensors) to estimate Remaining Useful Life of aircraft engines</li>
+            <li>Feature-engineering pipeline (50-step sequences, 18 features) with trained LSTM models, improving accuracy by 15%</li>
+            <li>Deployed as Flask REST API with live monitoring dashboard. Findings published at Springer</li>
+          </ul>
+        </div>
+
+        <div class="orbital-rings">
+          <div class="ring-label">Technology Stack</div>
+          <div class="tech-orbit">
+            <span class="tech-node lstm">LSTM</span>
+            <span class="tech-node flask">Flask</span>
+            <span class="tech-node ts">Time Series</span>
+            <span class="tech-node springer">Springer Pub.</span>
+          </div>
+        </div>
+
+        <div class="system-links">
+          <a href="https://github.com/anish1206/Flight-management-edi-sem3" target="_blank" class="system-link repo">
+            <span class="link-icon">⌘</span>
+            <span>Repository</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- System KJ-004 -->
+    <article id="system-kj004" class="stellar-system fullstack-type">
+      <div class="system-header">
+        <div class="catalog-number">KJ-004</div>
+        <div class="system-classification">
+          <span class="class-type">Type-G</span>
+          <span class="class-desc">Yellow Star · Full-Stack</span>
+        </div>
+      </div>
+      <h3 class="system-name">Aspira</h3>
+      <p class="system-designation">AI-Powered Mental Wellness Platform</p>
+
+      <div class="system-details">
+        <div class="detail-group">
+          <div class="detail-label">Core Systems</div>
+          <ul class="system-description">
+            <li>Full-stack platform (6+ features) with AI counseling, journaling, mood tracking, and mentor booking</li>
+            <li>Gemini-powered context-aware AI assistant and automated mentor-scheduling workflow (Firebase Auth/Firestore), cutting coordination effort 90%+</li>
+          </ul>
+        </div>
+
+        <div class="orbital-rings">
+          <div class="ring-label">Technology Stack</div>
+          <div class="tech-orbit">
+            <span class="tech-node gemini">Gemini API</span>
+            <span class="tech-node firebase">Firebase</span>
+            <span class="tech-node react">React</span>
+          </div>
+        </div>
+
+        <div class="system-links">
+          <a href="https://mindsync-web.vercel.app/" target="_blank" class="system-link live">
+            <span class="link-icon">●</span>
+            <span>Live Deployment</span>
+          </a>
+          <a href="https://github.com/Khush-33" target="_blank" class="system-link repo">
+            <span class="link-icon">⌘</span>
+            <span>Repository</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- System KJ-005 -->
+    <article id="system-kj005" class="stellar-system ml-type">
+      <div class="system-header">
+        <div class="catalog-number">KJ-005</div>
+        <div class="system-classification">
+          <span class="class-type">Type-K</span>
+          <span class="class-desc">Orange Star · NLP</span>
+        </div>
+      </div>
+      <h3 class="system-name">Document Intelligence Platform</h3>
+      <p class="system-designation">Adobe India Hackathon 2025</p>
+
+      <div class="system-details">
+        <div class="detail-group">
+          <div class="detail-label">Core Systems</div>
+          <ul class="system-description">
+            <li>AI document-intelligence platform: automated PDF extraction, semantic search, and transformer-based classification (all-MiniLM-L6-v2) across 10+ PDFs per collection</li>
+            <li>Cut manual review time by 80%+ through semantic search and embeddings</li>
+          </ul>
+        </div>
+
+        <div class="orbital-rings">
+          <div class="ring-label">Technology Stack</div>
+          <div class="tech-orbit">
+            <span class="tech-node nlp">NLP</span>
+            <span class="tech-node embeddings">Embeddings</span>
+            <span class="tech-node search">Semantic Search</span>
+          </div>
+        </div>
+
+        <div class="system-links">
+          <a href="https://github.com/anish1206/1Bpdf-simplifier-Adobe" target="_blank" class="system-link repo">
+            <span class="link-icon">⌘</span>
+            <span>Repository</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <!-- System KJ-006 -->
+    <article id="system-kj006" class="stellar-system db-type">
+      <div class="system-header">
+        <div class="catalog-number">KJ-006</div>
+        <div class="system-classification">
+          <span class="class-type">Type-M</span>
+          <span class="class-desc">Red Dwarf · Database</span>
+        </div>
+      </div>
+      <h3 class="system-name">IPL Auction Simulator</h3>
+      <p class="system-designation">DBMS & OOP Coursework</p>
+
+      <div class="system-details">
+        <div class="detail-group">
+          <div class="detail-label">Core Systems</div>
+          <ul class="system-description">
+            <li>Normalized MySQL schema and OOP class model (Player, Team, Auctioneer, Bid) simulating real IPL auction flow</li>
+            <li>One player at a time, competitive multi-team bidding, purse/budget constraints enforced</li>
+          </ul>
+        </div>
+
+        <div class="orbital-rings">
+          <div class="ring-label">Technology Stack</div>
+          <div class="tech-orbit">
+            <span class="tech-node mysql">MySQL</span>
+            <span class="tech-node oop">OOP</span>
+            <span class="tech-node dbms">DBMS</span>
+          </div>
+        </div>
+
+        <div class="system-links">
+          <a href="https://github.com/Khush-33/DBMS_CP" target="_blank" class="system-link repo">
+            <span class="link-icon">⌘</span>
+            <span>Repository</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- Admin Panel Integration -->
+  <div id="extraProjects" class="systems-grid"></div>
+  <button class="admin-add-btn admin-only" id="addProjectBtn">+ chart new system</button>
+</section>
+
+<!-- Skills Constellation -->
+<section id="constellation" class="catalog-section constellation-view">
+  <div class="section-header">
+    <h2 class="section-title">Technology Constellation</h2>
+    <div class="catalog-meta">
+      <span class="meta-item">Spectral Classifications</span>
+      <span class="meta-sep">·</span>
+      <span class="meta-item">Star Chart</span>
+    </div>
+  </div>
+
+  <div class="constellation-map">
+    <!-- Languages Cluster -->
+    <div class="star-cluster" data-cluster="languages">
+      <div class="cluster-label">Languages</div>
+      <div class="cluster-stars">
+        <div class="constellation-star bright" data-tech="C++">
+          <span class="star-glow systems-type"></span>
+          <span class="star-label">C++</span>
+        </div>
+        <div class="constellation-star bright" data-tech="Python">
+          <span class="star-glow ml-type"></span>
+          <span class="star-label">Python</span>
+        </div>
+        <div class="constellation-star bright" data-tech="JavaScript">
+          <span class="star-glow fullstack-type"></span>
+          <span class="star-label">JavaScript</span>
+        </div>
+        <div class="constellation-star" data-tech="Java">
+          <span class="star-glow systems-type"></span>
+          <span class="star-label">Java</span>
+        </div>
+        <div class="constellation-star" data-tech="C">
+          <span class="star-glow systems-type"></span>
+          <span class="star-label">C</span>
+        </div>
+        <div class="constellation-star" data-tech="SQL">
+          <span class="star-glow db-type"></span>
+          <span class="star-label">SQL</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Web Development Cluster -->
+    <div class="star-cluster" data-cluster="web">
+      <div class="cluster-label">Web Development</div>
+      <div class="cluster-stars">
+        <div class="constellation-star bright" data-tech="React">
+          <span class="star-glow fullstack-type"></span>
+          <span class="star-label">React.js</span>
+        </div>
+        <div class="constellation-star bright" data-tech="Node">
+          <span class="star-glow fullstack-type"></span>
+          <span class="star-label">Node.js</span>
+        </div>
+        <div class="constellation-star" data-tech="Express">
+          <span class="star-glow fullstack-type"></span>
+          <span class="star-label">Express.js</span>
+        </div>
+        <div class="constellation-star" data-tech="HTML">
+          <span class="star-glow fullstack-type"></span>
+          <span class="star-label">HTML</span>
+        </div>
+        <div class="constellation-star" data-tech="CSS">
+          <span class="star-glow fullstack-type"></span>
+          <span class="star-label">CSS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cloud & Databases Cluster -->
+    <div class="star-cluster" data-cluster="cloud">
+      <div class="cluster-label">Cloud & Databases</div>
+      <div class="cluster-stars">
+        <div class="constellation-star bright" data-tech="Firebase">
+          <span class="star-glow db-type"></span>
+          <span class="star-label">Firebase</span>
+        </div>
+        <div class="constellation-star bright" data-tech="MongoDB">
+          <span class="star-glow db-type"></span>
+          <span class="star-label">MongoDB</span>
+        </div>
+        <div class="constellation-star" data-tech="MySQL">
+          <span class="star-glow db-type"></span>
+          <span class="star-label">MySQL</span>
+        </div>
+        <div class="constellation-star" data-tech="PostgreSQL">
+          <span class="star-glow db-type"></span>
+          <span class="star-label">PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI/ML Cluster -->
+    <div class="star-cluster" data-cluster="ml">
+      <div class="cluster-label">AI / ML & Data</div>
+      <div class="cluster-stars">
+        <div class="constellation-star bright" data-tech="LSTM">
+          <span class="star-glow ml-type"></span>
+          <span class="star-label">LSTM</span>
+        </div>
+        <div class="constellation-star bright" data-tech="RL">
+          <span class="star-glow ml-type"></span>
+          <span class="star-label">Reinforcement Learning</span>
+        </div>
+        <div class="constellation-star" data-tech="Pandas">
+          <span class="star-glow ml-type"></span>
+          <span class="star-label">Pandas</span>
+        </div>
+        <div class="constellation-star" data-tech="NumPy">
+          <span class="star-glow ml-type"></span>
+          <span class="star-label">NumPy</span>
+        </div>
+        <div class="constellation-star" data-tech="ARIMA">
+          <span class="star-glow ml-type"></span>
+          <span class="star-label">ARIMA Forecasting</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Systems & Algorithms Cluster -->
+    <div class="star-cluster" data-cluster="systems">
+      <div class="cluster-label">Advanced DS & Algorithms</div>
+      <div class="cluster-stars">
+        <div class="constellation-star" data-tech="FibHeap">
+          <span class="star-glow systems-type"></span>
+          <span class="star-label">Fibonacci Heap</span>
+        </div>
+        <div class="constellation-star" data-tech="Splay">
+          <span class="star-glow systems-type"></span>
+          <span class="star-label">Splay Tree</span>
+        </div>
+        <div class="constellation-star" data-tech="BTree">
+          <span class="star-glow systems-type"></span>
+          <span class="star-label">B-Tree</span>
+        </div>
+        <div class="constellation-star" data-tech="Trie">
+          <span class="star-glow systems-type"></span>
+          <span class="star-label">Trie</span>
+        </div>
+        <div class="constellation-star" data-tech="Graphs">
+          <span class="star-glow systems-type"></span>
+          <span class="star-label">Graph Algorithms</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DevOps Cluster -->
+    <div class="star-cluster" data-cluster="devops">
+      <div class="cluster-label">DevOps & Systems</div>
+      <div class="cluster-stars">
+        <div class="constellation-star" data-tech="Git">
+          <span class="star-glow systems-type"></span>
+          <span class="star-label">Git</span>
+        </div>
+        <div class="constellation-star" data-tech="Docker">
+          <span class="star-glow systems-type"></span>
+          <span class="star-label">Docker</span>
+        </div>
+        <div class="constellation-star" data-tech="Linux">
+          <span class="star-glow systems-type"></span>
+          <span class="star-label">Linux</span>
+        </div>
+        <div class="constellation-star" data-tech="CICD">
+          <span class="star-glow systems-type"></span>
+          <span class="star-label">CI/CD</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div>
-        <div class="eyebrow">about</div>
-        <h2 class="sec-title">Who's running this process</h2>
-      </div>
-      <p class="sec-note">A quick read on background, education, and what currently keeps me up at night (usually a scheduler bug).</p>
+<!-- GitHub Observatory -->
+<section id="github-observatory" class="catalog-section">
+  <div class="section-header">
+    <h2 class="section-title">GitHub Observatory</h2>
+    <div class="catalog-meta">
+      <span class="meta-item">Live Signal Data</span>
+      <span class="meta-sep">·</span>
+      <span class="meta-item">github.com/Khush-33</span>
     </div>
+  </div>
 
-    <div class="about-grid reveal">
-      <div class="about-text">
-        <p>I'm a <b>Computer Science (AI &amp; Machine Learning)</b> student at Vishwakarma Institute of Technology, Pune, holding a <b>9.33 CGPA</b>. I split my time between full-stack product work — real-time apps on React and Firebase — and lower-level systems programming, where I've built things like a carbon-aware OS scheduler with hand-rolled data structures.</p>
-        <p>On the ML side, I've shipped forecasting and predictive-maintenance pipelines using LSTMs, reinforcement learning, and ARIMA-based time-series models, and co-authored a <b>Springer publication</b> on aircraft engine RUL prediction.</p>
-        <p>I've competed in <b>15+ hackathons</b> — including ISRO, Smart India Hackathon, Adobe India Hackathon 2025, Mumbai Hacks, and Odoo — and solved <b>150+ DSA problems</b> on LeetCode across arrays, trees, graphs, and dynamic programming.</p>
-
-        <div class="edu-card">
-          <div class="school">Vishwakarma Institute of Technology, Pune</div>
-          <div class="deg">B.Tech, Computer Science Engineering (AI &amp; Machine Learning) · 2024 – Present</div>
-          <div class="cgpa">CGPA: 9.33</div>
+  <div class="observatory-grid">
+    <div class="observatory-panel profile-panel">
+      <div class="panel-header">
+        <span class="panel-label">Profile Signal</span>
+      </div>
+      <div class="github-profile">
+        <img src="https://avatars.githubusercontent.com/u/207576024?v=4" alt="Khush-33 GitHub" class="github-avatar">
+        <div class="profile-info">
+          <div class="profile-handle">Khush-33</div>
+          <div class="profile-bio">"geek." · systems, algorithms & scalable backend engineering</div>
+          <div class="profile-stats">
+            <span class="stat-item">10 repositories</span>
+            <span class="stat-sep">·</span>
+            <span class="stat-item">🦈 Pull Shark</span>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div class="about-side">
-        <div class="fact"><span class="k">location</span><span class="v">Pune, Maharashtra, IN</span></div>
-        <div class="fact"><span class="k">focus</span><span class="v">Full-Stack · Systems · ML</span></div>
-        <div class="fact"><span class="k">languages</span><span class="v">C++ / Python / JS / Java</span></div>
-        <div class="fact"><span class="k">status</span><span class="v">open to internships</span></div>
-        <div class="fact"><span class="k">publication</span><span class="v">Springer · 06.2026</span></div>
+    <div class="observatory-panel stats-panel">
+      <div class="panel-header">
+        <span class="panel-label">Activity Spectrum</span>
+      </div>
+      <img src="https://github-readme-stats.vercel.app/api?username=Khush-33&theme=transparent&hide_border=true&bg_color=00000000&title_color=a8c5e6&icon_color=4a7c9e&text_color=c5d1d9&hide_title=true&show_icons=true" alt="GitHub stats" class="stats-image">
+    </div>
+
+    <div class="observatory-panel langs-panel">
+      <div class="panel-header">
+        <span class="panel-label">Language Distribution</span>
+      </div>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Khush-33&theme=transparent&hide_border=true&bg_color=00000000&title_color=a8c5e6&text_color=c5d1d9&layout=compact&hide_title=true" alt="Top languages" class="stats-image">
+    </div>
+
+    <div class="observatory-panel repos-panel">
+      <div class="panel-header">
+        <span class="panel-label">Primary Repositories</span>
+      </div>
+      <div class="repo-list">
+        <a href="https://github.com/Khush-33/DBMS_CP" target="_blank" class="repo-item">
+          <span class="repo-icon">▸</span>
+          <span class="repo-name">DBMS_CP</span>
+          <span class="repo-lang">JavaScript</span>
+        </a>
+        <a href="https://github.com/Khush-33/CRICKET_SCOREBOARD" target="_blank" class="repo-item">
+          <span class="repo-icon">▸</span>
+          <span class="repo-name">CRICKET_SCOREBOARD</span>
+          <span class="repo-lang">C</span>
+        </a>
+        <a href="https://github.com/Khush-33/oops-java" target="_blank" class="repo-item">
+          <span class="repo-icon">▸</span>
+          <span class="repo-name">oops-java</span>
+          <span class="repo-lang">Java</span>
+        </a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div>
-        <div class="eyebrow">stack</div>
-        <h2 class="sec-title">Loaded modules</h2>
+<!-- Achievement Markers -->
+<section id="achievements" class="catalog-section">
+  <div class="section-header">
+    <h2 class="section-title">Achievement Markers</h2>
+    <div class="catalog-meta">
+      <span class="meta-item">Certifications & Discoveries</span>
+    </div>
+  </div>
+
+  <div class="achievements-grid">
+    <div class="achievement-category">
+      <h3 class="category-title">Certifications</h3>
+      <div id="certList" class="cert-markers">
+        <div class="achievement-marker">
+          <span class="marker-icon">◆</span>
+          <div class="marker-content">
+            <a href="https://www.coursera.org/account/accomplishments/records/D1815JFLY3EV" target="_blank" class="marker-title">Automata and Computability</a>
+            <div class="marker-meta">BITS Pilani · 06.2026</div>
+          </div>
+        </div>
+        <div class="achievement-marker">
+          <span class="marker-icon">◆</span>
+          <div class="marker-content">
+            <a href="https://www.coursera.org/account/accomplishments/records/NSK2BYW0ZMIB" target="_blank" class="marker-title">Operating Systems and You: Becoming a Power User</a>
+            <div class="marker-meta">Google · 06.2026</div>
+          </div>
+        </div>
+        <div class="achievement-marker">
+          <span class="marker-icon">◆</span>
+          <div class="marker-content">
+            <a href="https://www.coursera.org/account/accomplishments/records/ZFDHIQCRFV4K" target="_blank" class="marker-title">Project Initiation: Starting a Successful Project</a>
+            <div class="marker-meta">Google · 12.2025</div>
+          </div>
+        </div>
+        <div class="achievement-marker">
+          <span class="marker-icon">◆</span>
+          <div class="marker-content">
+            <a href="https://www.coursera.org/account/accomplishments/verify/MUARNH3VJNFU" target="_blank" class="marker-title">Foundations of Project Management</a>
+            <div class="marker-meta">Google · 11.2025</div>
+          </div>
+        </div>
       </div>
-      <p class="sec-note">Languages, frameworks, and tools currently resident in memory.</p>
+      <div id="extraCerts"></div>
+      <button class="admin-add-btn admin-only" id="addCertBtn">+ record certification</button>
     </div>
 
-    <div class="skill-groups reveal">
-      <div class="skill-card">
-        <h3>Languages</h3>
-        <div class="chip-row">
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">C++</span>
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg">C</span>
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">Python</span>
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">Java</span>
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">SQL</span>
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">JavaScript</span>
+    <div class="achievement-category">
+      <h3 class="category-title">Competitions & Events</h3>
+      <div class="event-markers">
+        <div class="achievement-marker">
+          <span class="marker-icon">▸</span>
+          <div class="marker-content">
+            <div class="marker-title">15+ Hackathons</div>
+            <div class="marker-meta">ISRO, SIH, Adobe India 2025, Mumbai Hacks, Odoo</div>
+          </div>
+        </div>
+        <div class="achievement-marker">
+          <span class="marker-icon">▸</span>
+          <div class="marker-content">
+            <div class="marker-title">150+ DSA Problems</div>
+            <div class="marker-meta">LeetCode · Arrays, Trees, Graphs, Dynamic Programming</div>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div class="skill-card">
-        <h3>Web Development</h3>
-        <div class="chip-row">
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">React.js</span>
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">Node.js</span>
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg">Express.js</span>
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">HTML</span>
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">CSS</span>
-          <span class="chip">MERN Stack</span>
+    <div class="achievement-category">
+      <h3 class="category-title">Publications</h3>
+      <div id="pubList" class="pub-markers">
+        <div class="publication-marker">
+          <div class="pub-meta">Springer · 06.2026</div>
+          <div class="pub-title">"Comparative Evaluation of Models for Aircraft Engine RUL Prediction"</div>
+          <div class="pub-note">Co-authored research on predictive-maintenance modeling</div>
         </div>
       </div>
+      <div id="extraPubs"></div>
+      <button class="admin-add-btn admin-only" id="addPubBtn">+ record publication</button>
+    </div>
+  </div>
+</section>
 
-      <div class="skill-card">
-        <h3>Cloud &amp; Databases</h3>
-        <div class="chip-row">
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg">Firebase</span>
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg">MongoDB</span>
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">MySQL</span>
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg">PostgreSQL</span>
-          <span class="chip">Vercel</span>
-          <span class="chip">Render</span>
-        </div>
+<!-- Contact Coordinates -->
+<section id="contact" class="catalog-section contact-section">
+  <div class="section-header">
+    <h2 class="section-title">Contact Coordinates</h2>
+    <div class="catalog-meta">
+      <span class="meta-item">Earth · Sol System</span>
+    </div>
+  </div>
+
+  <div class="contact-display">
+    <div class="contact-message">
+      <p class="contact-intro">Open to software development internships, systems & ML roles, and interesting collaborations.</p>
+      <p class="contact-response">Signal response typically within 24 hours.</p>
+    </div>
+
+    <div class="contact-coordinates">
+      <a href="mailto:khushjain8419@gmail.com" class="coord-link primary">
+        <span class="coord-icon">✉</span>
+        <span class="coord-label">khushjain8419@gmail.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/khush-jain-934414360" target="_blank" class="coord-link">
+        <span class="coord-icon">in</span>
+        <span class="coord-label">linkedin.com/in/khush-jain-934414360</span>
+      </a>
+      <a href="https://github.com/Khush-33" target="_blank" class="coord-link">
+        <span class="coord-icon">⌘</span>
+        <span class="coord-label">github.com/Khush-33</span>
+      </a>
+      <a href="https://leetcode.com/u/Khush03/" target="_blank" class="coord-link">
+        <span class="coord-icon">◆</span>
+        <span class="coord-label">leetcode.com/u/Khush03</span>
+      </a>
+      <a href="tel:+918767465747" class="coord-link">
+        <span class="coord-icon">☎</span>
+        <span class="coord-label">+91 87674 65747</span>
+      </a>
+    </div>
+
+    <div class="location-data">
+      <div class="location-field">
+        <span class="field-label">LOCATION</span>
+        <span class="field-value">Pune, Maharashtra, India</span>
       </div>
-
-      <div class="skill-card">
-        <h3>AI / ML &amp; Data</h3>
-        <div class="chip-row">
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg">Pandas</span>
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg">NumPy</span>
-          <span class="chip">Scikit-learn</span>
-          <span class="chip">LSTM / Deep Learning</span>
-          <span class="chip">Reinforcement Learning</span>
-          <span class="chip">ARIMA Forecasting</span>
-        </div>
+      <div class="location-field">
+        <span class="field-label">INSTITUTION</span>
+        <span class="field-value">Vishwakarma Institute of Technology</span>
       </div>
-
-      <div class="skill-card">
-        <h3>Advanced DS &amp; Algorithms</h3>
-        <div class="chip-row">
-          <span class="chip">Fibonacci Heap</span>
-          <span class="chip">Splay Tree</span>
-          <span class="chip">B-Tree</span>
-          <span class="chip">Trie</span>
-          <span class="chip">Huffman Coding</span>
-          <span class="chip">Graph Algorithms</span>
-        </div>
+      <div class="location-field">
+        <span class="field-label">PROGRAM</span>
+        <span class="field-value">B.Tech CSE (AI & ML) · CGPA 9.33</span>
       </div>
-
-      <div class="skill-card">
-        <h3>DevOps &amp; Systems</h3>
-        <div class="chip-row">
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">Git</span>
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg">Docker</span>
-          <span class="chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">Linux</span>
-          <span class="chip">GitHub Actions / CI-CD</span>
-          <span class="chip">Process Scheduling</span>
-          <span class="chip">Deadlock Avoidance</span>
-        </div>
+      <div class="location-field">
+        <span class="field-label">GRADUATION</span>
+        <span class="field-value">2028</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- GITHUB ACTIVITY -->
-<section id="github">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div>
-        <div class="eyebrow">git log</div>
-        <h2 class="sec-title">github.com/Khush-33</h2>
-      </div>
-      <p class="sec-note">Live-ish snapshot of the repo activity — bio, stats, and top repositories.</p>
+<footer class="archive-footer">
+  <div class="footer-content">
+    <div class="footer-meta">
+      <span class="meta-item">© 2026 Khush Jain</span>
+      <span class="meta-sep">·</span>
+      <span class="meta-item">Interstellar Cartography Archive</span>
+      <span class="meta-sep">·</span>
+      <span class="meta-item">Built with HTML, CSS & JS</span>
     </div>
-
-    <div class="about-grid reveal" style="align-items:start;">
-      <div>
-        <div class="edu-card" style="margin-top:0;">
-          <div style="display:flex;gap:14px;align-items:center;">
-            <img src="https://avatars.githubusercontent.com/u/207576024?v=4" alt="Khush Jain GitHub avatar" style="width:52px;height:52px;border-radius:50%;border:1px solid var(--line);">
-            <div>
-              <div class="school">Khush-33</div>
-              <div class="deg">"geek." · systems, algorithms &amp; scalable backend engineering</div>
-            </div>
-          </div>
-          <div class="chip-row" style="margin-top:18px;">
-            <span class="chip">10 repositories</span>
-            <span class="chip">4 stars earned</span>
-            <span class="chip">🦈 Pull Shark</span>
-          </div>
-        </div>
-
-        <div class="skill-card" style="margin-top:18px;">
-          <h3>Top Repositories</h3>
-          <div class="ach-item" style="border-color:var(--line);">
-            <span class="ach-icon">▸</span>
-            <span class="ach-text"><a href="https://github.com/Khush-33/DBMS_CP" target="_blank" style="color:var(--amber);">DBMS_CP</a> — coursework repo powering the IPL Auction Simulator project · JavaScript</span>
-          </div>
-          <div class="ach-item" style="border-color:var(--line);">
-            <span class="ach-icon">▸</span>
-            <span class="ach-text"><a href="https://github.com/Khush-33/CRICKET_SCOREBOARD" target="_blank" style="color:var(--amber);">CRICKET_SCOREBOARD</a> — scoreboard system · C</span>
-          </div>
-          <div class="ach-item" style="border-color:var(--line);">
-            <span class="ach-icon">▸</span>
-            <span class="ach-text"><a href="https://github.com/Khush-33/oops-java" target="_blank" style="color:var(--amber);">oops-java</a> — OOP fundamentals practice · Java</span>
-          </div>
-          <div class="ach-item" style="border-bottom:none;">
-            <span class="ach-icon">▸</span>
-            <span class="ach-text"><a href="https://github.com/Khush-33/localrepo" target="_blank" style="color:var(--amber);">localrepo</a> — sandbox repo · CSS</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="about-side">
-        <img src="https://github-readme-stats.vercel.app/api?username=Khush-33&theme=dark&hide_border=true&bg_color=12151b&title_color=ffb020&icon_color=4fd1c5&text_color=e9e7e2" alt="Khush-33 GitHub stats" style="width:100%;border-radius:10px;">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Khush-33&theme=dark&hide_border=true&bg_color=12151b&title_color=ffb020&text_color=e9e7e2&layout=compact" alt="Khush-33 top languages" style="width:100%;border-radius:10px;">
-      </div>
+    <div class="footer-catalog">
+      <span class="catalog-id">ARCHIVE-001</span>
+      <span class="meta-sep">·</span>
+      <span class="catalog-epoch">EPOCH J2026.65</span>
     </div>
   </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div>
-        <div class="eyebrow">projects</div>
-        <h2 class="sec-title">Running processes</h2>
-      </div>
-      <p class="sec-note">Six shipped systems — spanning real-time apps, OS internals, and applied ML.</p>
-    </div>
-
-    <div class="proj-list">
-
-      <div class="proj reveal">
-        <div class="proj-pid">PID<span class="n">01</span></div>
-        <div>
-          <div class="proj-head">
-            <div class="proj-title">LiveAuction Pro — Real-Time Sports Auction Platform</div>
-            <div class="proj-status">● live</div>
-          </div>
-          <div class="proj-desc">
-            <ul>
-              <li>Full-stack real-time auction app (React, Firebase Firestore) for live multi-team player bidding with instant, multi-client sync.</li>
-              <li>Role-based Admin/Viewer authentication with a responsive, mobile-first UI for concurrent live sessions.</li>
-              <li>Real-time "Max Safe Bid" calculator, back-end CRUD/business logic, and exportable auction reports (PPT); deployed on Vercel with a Git-based CI workflow.</li>
-            </ul>
-          </div>
-          <div class="proj-tags"><span class="tag">React</span><span class="tag">Firebase</span><span class="tag">Vercel</span><span class="tag">CI/CD</span></div>
-          <div class="proj-links">
-            <a href="https://proauction-livid.vercel.app/" target="_blank">▶ live demo</a>
-            <a href="https://github.com/Khush-33" target="_blank">⌘ github</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="proj reveal">
-        <div class="proj-pid">PID<span class="n">02</span></div>
-        <div>
-          <div class="proj-head">
-            <div class="proj-title">Eco-Cloud — Carbon-Aware Data Center Scheduler</div>
-            <div class="proj-status">● 2025–2026</div>
-          </div>
-          <div class="proj-desc">
-            <ul>
-              <li>C++/Python discrete-event simulation of a data-center OS scheduler optimizing for carbon footprint and thermal efficiency, not just throughput.</li>
-              <li>Core OS internals: 7-state process model, context switching, adaptive Round-Robin with percentile-derived dynamic quantum, and Banker's Algorithm deadlock avoidance across solar/grid/battery sources.</li>
-              <li>Hand-built data structures without STL — Fibonacci Heap ready queue, Splay Tree job cache, B-Tree log indexing, Huffman-coded log compression.</li>
-              <li>Deep RL agent integrated with ARIMA-based carbon-intensity forecasting to dynamically prioritize and preempt jobs.</li>
-            </ul>
-          </div>
-          <div class="proj-tags"><span class="tag">C++</span><span class="tag">Python</span><span class="tag">Reinforcement Learning</span><span class="tag">OS Internals</span></div>
-          <div class="proj-links">
-            <a href="https://github.com/Khush-33/Eco-Cloud" target="_blank">⌘ github</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="proj reveal">
-        <div class="proj-pid">PID<span class="n">03</span></div>
-        <div>
-          <div class="proj-head">
-            <div class="proj-title">Aircraft Engine Health Monitoring System</div>
-            <div class="proj-status">● 2025</div>
-          </div>
-          <div class="proj-desc">
-            <ul>
-              <li>Predictive-maintenance system on NASA C-MAPSS data (21 sensors) to estimate Remaining Useful Life of aircraft engines.</li>
-              <li>Feature-engineering pipeline (50-step sequences, 18 features) with trained LSTM models, improving accuracy by 15%.</li>
-              <li>Deployed as a Flask REST API with a live monitoring dashboard. Findings published at Springer.</li>
-            </ul>
-          </div>
-          <div class="proj-tags"><span class="tag">LSTM</span><span class="tag">Flask</span><span class="tag">Time Series</span><span class="tag">Springer Pub.</span></div>
-          <div class="proj-links">
-            <a href="https://github.com/anish1206/Flight-management-edi-sem3" target="_blank">⌘ github</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="proj reveal">
-        <div class="proj-pid">PID<span class="n">04</span></div>
-        <div>
-          <div class="proj-head">
-            <div class="proj-title">Aspira — AI-Powered Mental Wellness Platform</div>
-            <div class="proj-status">● 2025</div>
-          </div>
-          <div class="proj-desc">
-            <ul>
-              <li>Full-stack platform (6+ features) with AI counseling, journaling, mood tracking, and mentor booking.</li>
-              <li>Gemini-powered context-aware AI assistant and automated mentor-scheduling workflow (Firebase Auth/Firestore), cutting coordination effort 90%+.</li>
-            </ul>
-          </div>
-          <div class="proj-tags"><span class="tag">Gemini API</span><span class="tag">Firebase</span><span class="tag">React</span></div>
-          <div class="proj-links">
-            <a href="https://mindsync-web.vercel.app/" target="_blank">▶ live demo</a>
-            <a href="https://github.com/Khush-33" target="_blank">⌘ github</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="proj reveal">
-        <div class="proj-pid">PID<span class="n">05</span></div>
-        <div>
-          <div class="proj-head">
-            <div class="proj-title">Adobe India Hackathon 2025 — Document Intelligence Platform</div>
-            <div class="proj-status">● 2025</div>
-          </div>
-          <div class="proj-desc">
-            <ul>
-              <li>AI document-intelligence platform: automated PDF extraction, semantic search, and transformer-based classification (all-MiniLM-L6-v2) across 10+ PDFs per collection.</li>
-              <li>Cut manual review time by 80%+ through semantic search and embeddings.</li>
-            </ul>
-          </div>
-          <div class="proj-tags"><span class="tag">NLP</span><span class="tag">Embeddings</span><span class="tag">Semantic Search</span></div>
-          <div class="proj-links">
-            <a href="https://github.com/anish1206/1Bpdf-simplifier-Adobe" target="_blank">⌘ github</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="proj reveal">
-        <div class="proj-pid">PID<span class="n">06</span></div>
-        <div>
-          <div class="proj-head">
-            <div class="proj-title">IPL Auction Simulator — DBMS &amp; OOP Coursework</div>
-            <div class="proj-status">● 2025</div>
-          </div>
-          <div class="proj-desc">
-            <ul>
-              <li>Normalized MySQL schema and OOP class model (Player, Team, Auctioneer, Bid) simulating the real IPL auction flow.</li>
-              <li>One player at a time, competitive multi-team bidding, purse/budget constraints enforced.</li>
-            </ul>
-          </div>
-          <div class="proj-tags"><span class="tag">MySQL</span><span class="tag">OOP</span><span class="tag">DBMS</span></div>
-          <div class="proj-links">
-            <a href="https://github.com/Khush-33/DBMS_CP" target="_blank">⌘ github</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div id="extraProjects" class="proj-list" style="margin-top:18px;"></div>
-    <button class="admin-add-btn admin-only" id="addProjectBtn">+ add project</button>
-  </div>
-</section>
-<section id="achievements">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div>
-        <div class="eyebrow">log</div>
-        <h2 class="sec-title">Achievements &amp; certifications</h2>
-      </div>
-      <p class="sec-note">A running log of competitions, publications, and completed coursework.</p>
-    </div>
-
-    <div class="ach-grid reveal">
-      <div class="ach-block">
-        <h3>Hackathons &amp; Competitions</h3>
-        <div class="ach-item"><span class="ach-icon">▸</span><span class="ach-text">Participated in <b>15+ hackathons</b>, including ISRO Hackathon, Odoo Hackathon, Smart India Hackathon (SIH), Hack2Skill, Mumbai Hacks, and Adobe India Hackathon 2025.</span></div>
-        <div class="ach-item"><span class="ach-icon">▸</span><span class="ach-text">Solved <b>150+ DSA problems</b> on LeetCode across arrays, trees, graphs, and dynamic programming.</span></div>
-
-        <h3 style="margin-top:32px;">Publication</h3>
-        <div id="pubList">
-          <div class="pub-card">
-            <span class="tag">Springer · 06.2026</span>
-            <p>"Comparative Evaluation of Models for Aircraft Engine RUL Prediction"</p>
-            <div class="venue">Co-authored research on predictive-maintenance modeling</div>
-          </div>
-        </div>
-        <div id="extraPubs"></div>
-        <button class="admin-add-btn admin-only" id="addPubBtn">+ add research paper</button>
-      </div>
-
-      <div class="ach-block">
-        <h3>Certifications</h3>
-        <div id="certList">
-          <div class="ach-item"><span class="ach-icon">▸</span><span class="ach-text"><a href="https://www.coursera.org/account/accomplishments/records/D1815JFLY3EV" target="_blank" style="color:var(--amber);"><b>Automata and Computability</b></a> — BITS Pilani (06.2026)</span></div>
-          <div class="ach-item"><span class="ach-icon">▸</span><span class="ach-text"><a href="https://www.coursera.org/account/accomplishments/records/NSK2BYW0ZMIB" target="_blank" style="color:var(--amber);"><b>Operating Systems and You: Becoming a Power User</b></a> — Google (06.2026)</span></div>
-          <div class="ach-item"><span class="ach-icon">▸</span><span class="ach-text"><a href="https://www.coursera.org/account/accomplishments/records/ZFDHIQCRFV4K" target="_blank" style="color:var(--amber);"><b>Project Initiation: Starting a Successful Project</b></a> — Google (12.2025)</span></div>
-          <div class="ach-item"><span class="ach-icon">▸</span><span class="ach-text"><a href="https://www.coursera.org/account/accomplishments/verify/MUARNH3VJNFU" target="_blank" style="color:var(--amber);"><b>Foundations of Project Management</b></a> — Google (11.2025)</span></div>
-        </div>
-        <div id="extraCerts"></div>
-        <button class="admin-add-btn admin-only" id="addCertBtn">+ add certification</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="wrap">
-    <div class="contact-box reveal">
-      <div class="eyebrow" style="justify-content:center;">connect</div>
-      <h2>Let's build something.</h2>
-      <p>Open to software development internships, systems &amp; ML roles, and interesting collaborations. Reach out — I usually reply within a day.</p>
-      <div class="contact-links">
-        <a class="btn btn-primary" href="mailto:khushjain8419@gmail.com">✉ email</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/khush-jain-934414360" target="_blank">in linkedin</a>
-        <a class="btn btn-ghost" href="https://github.com/Khush-33" target="_blank">⌘ github</a>
-        <a class="btn btn-ghost" href="https://leetcode.com/u/Khush03/" target="_blank">◆ leetcode</a>
-        <a class="btn btn-ghost" href="tel:+918767465747">☎ +91 87674 65747</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  © 2026 Khush Jain · built solo with HTML, CSS &amp; JS · <a href="https://github.com/Khush-33" target="_blank">github.com/Khush-33</a> · Pune, India
 </footer>
 
-<div class="statusbar">
-  <div class="left"><span class="live"></span><span class="mono">khush_jain</span> <span>●</span> <span>ONLINE</span></div>
-  <div class="right">
-    <span>uptime: <b id="uptime">00:00:00</b></span>
-    <span>focus: <b>internship search</b></span>
-    <span>cgpa: <b>9.33</b></span>
-  </div>
-</div>
-
-
-
-<!-- ADMIN -->
+<!-- Admin Panel (preserved from original) -->
 <div class="admin-fab" id="adminFab" title="Admin login">🔒</div>
 
 <div class="modal-overlay" id="loginModal">
@@ -476,21 +846,20 @@
     </div>
     <button class="btn btn-primary" id="loginSubmit" style="width:100%;justify-content:center;">▶ unlock</button>
     <p class="modal-note" id="loginError" style="color:var(--red);display:none;"></p>
-    <p class="modal-note">This account is created once in Firebase Console → Authentication → Users. Only that login can add or remove items.</p>
   </div>
 </div>
 
 <div class="modal-overlay" id="projectModal">
   <div class="modal">
     <span class="modal-close">✕ close</span>
-    <h3>// add project</h3>
-    <div class="field"><label>Title</label><input id="p_title" placeholder="Project name"></div>
-    <div class="field"><label>Status label</label><input id="p_status" placeholder="e.g. ● 2026 or ● live"></div>
-    <div class="field"><label>Description (one bullet per line)</label><textarea id="p_desc" placeholder="What it does...&#10;Key technical detail...&#10;Impact / result..."></textarea></div>
-    <div class="field"><label>Tags (comma separated)</label><input id="p_tags" placeholder="React, Firebase, Vercel"></div>
-    <div class="field"><label>Live demo URL (optional)</label><input id="p_demo" placeholder="https://..."></div>
-    <div class="field"><label>GitHub URL (optional)</label><input id="p_github" placeholder="https://github.com/..."></div>
-    <button class="btn btn-primary" id="projectSubmit" style="width:100%;justify-content:center;">▶ add project</button>
+    <h3>// add system</h3>
+    <div class="field"><label>System Name</label><input id="p_title" placeholder="System name"></div>
+    <div class="field"><label>Classification</label><input id="p_status" placeholder="e.g. Type-F · Full-Stack"></div>
+    <div class="field"><label>System Details (one per line)</label><textarea id="p_desc" placeholder="Core systems...&#10;Technical details...&#10;Impact..."></textarea></div>
+    <div class="field"><label>Technologies (comma separated)</label><input id="p_tags" placeholder="React, Firebase, etc"></div>
+    <div class="field"><label>Live URL (optional)</label><input id="p_demo" placeholder="https://..."></div>
+    <div class="field"><label>Repository URL (optional)</label><input id="p_github" placeholder="https://github.com/..."></div>
+    <button class="btn btn-primary" id="projectSubmit" style="width:100%;justify-content:center;">▶ chart system</button>
   </div>
 </div>
 
@@ -502,23 +871,22 @@
     <div class="field"><label>Issuer</label><input id="c_org" placeholder="e.g. Google, Coursera"></div>
     <div class="field"><label>Date</label><input id="c_date" placeholder="e.g. 08.2026"></div>
     <div class="field"><label>Verification URL (optional)</label><input id="c_link" placeholder="https://..."></div>
-    <button class="btn btn-primary" id="certSubmit" style="width:100%;justify-content:center;">▶ add certification</button>
+    <button class="btn btn-primary" id="certSubmit" style="width:100%;justify-content:center;">▶ record</button>
   </div>
 </div>
 
 <div class="modal-overlay" id="pubModal">
   <div class="modal">
     <span class="modal-close">✕ close</span>
-    <h3>// add research paper</h3>
-    <div class="field"><label>Paper title</label><input id="pub_title" placeholder="\"Title of the paper\""></div>
-    <div class="field"><label>Venue / Journal</label><input id="pub_venue" placeholder="e.g. IEEE, Springer, arXiv"></div>
+    <h3>// add publication</h3>
+    <div class="field"><label>Paper Title</label><input id="pub_title" placeholder="Title"></div>
+    <div class="field"><label>Venue / Journal</label><input id="pub_venue" placeholder="e.g. Springer, IEEE"></div>
     <div class="field"><label>Date</label><input id="pub_date" placeholder="e.g. 09.2026"></div>
-    <div class="field"><label>Short note (optional)</label><input id="pub_note" placeholder="One line about the paper"></div>
-    <div class="field"><label>Paper URL (optional)</label><input id="pub_link" placeholder="https://..."></div>
-    <button class="btn btn-primary" id="pubSubmit" style="width:100%;justify-content:center;">▶ add paper</button>
+    <div class="field"><label>Note (optional)</label><input id="pub_note" placeholder="One line about it"></div>
+    <div class="field"><label>URL (optional)</label><input id="pub_link" placeholder="https://..."></div>
+    <button class="btn btn-primary" id="pubSubmit" style="width:100%;justify-content:center;">▶ record</button>
   </div>
 </div>
-
 
 <script src="main.js"></script>
 <script type="module" src="firebase-config.js"></script>
