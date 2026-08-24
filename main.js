@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   stellarMarkers.forEach(marker => {
     marker.addEventListener('mouseenter', () => {
-      marker.style.transition = 'transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.4s ease';
+      marker.style.transition = 'transform 0.4s ease-out, box-shadow 0.4s ease';
     });
   });
 

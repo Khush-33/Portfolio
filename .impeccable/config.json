@@ -1,0 +1,23 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "geist mono",
+        "createdAt": "2026-08-24T07:25:22.684Z",
+        "reason": "Direction contract specified: Geist Mono for scientific precision (coordinates, catalog numbers, technical data). Differentiates from terminal aesthetics while maintaining scientific rigor per interstellar cartography theme."
+      },
+      {
+        "rule": "codex-grid-background",
+        "value": "*",
+        "files": [
+          "styles.css"
+        ],
+        "createdAt": "2026-08-24T07:26:15.530Z",
+        "reason": "Domain-appropriate: Celestial coordinate grid overlay is literal measurement surface context for interstellar cartography archive. Coordinate systems (RA/DEC) are central to the navigation metaphor, not decorative."
+      }
+    ]
+  }
+}
