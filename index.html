@@ -37,12 +37,10 @@
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✧</text></svg>">
 
 <!-- Animation Libraries -->
-<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.min.js"></script>
 
-<!-- Motion Graphics System -->
+<!-- Motion System -->
 <script src="motion.js" defer></script>
 
 </head>
@@ -68,6 +66,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <div class="star-field" aria-hidden="true"></div>
 <div class="coordinate-grid" aria-hidden="true"></div>
 <div class="scanline-overlay" aria-hidden="true"></div>
+<div class="hero-bg" aria-hidden="true" style="background-image: url('assets/hero-bg.svg');"></div>
 
 <!-- Navigation Compass -->
 <nav class="celestial-nav" role="navigation" aria-label="Portfolio navigation">
@@ -98,7 +97,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section id="mission-specialist" class="viewport-section">
   <div class="mission-badge">
     <div class="badge-frame">
-      <img src="WhatsApp Image 2026-08-24 at 11.58.45 AM.jpeg" alt="Khush Jain" class="specialist-photo">
+      <img src="WhatsApp Image 2026-08-24 at 11.58.45 AM.jpeg" alt="Khush Jain" class="specialist-photo" loading="eager" fetchpriority="high">
       <svg class="orbital-ring" viewBox="0 0 120 120" aria-hidden="true">
         <circle cx="60" cy="60" r="56" fill="none" stroke="rgba(197, 209, 217, 0.3)" stroke-width="1"/>
         <path id="name-path" d="M 60,60 m -54,0 a 54,54 0 1,1 108,0 a 54,54 0 1,1 -108,0" fill="none"/>
@@ -214,7 +213,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="systems-grid">
 
     <!-- System KJ-001 -->
-    <article id="system-kj001" class="stellar-system fullstack-type">
+    <article id="system-kj001" class="stellar-system fullstack-type" data-system-id="kj001">
       <div class="system-header">
         <div class="catalog-number">KJ-001</div>
         <div class="system-classification">
@@ -224,6 +223,13 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       </div>
       <h3 class="system-name">LiveAuction Pro</h3>
       <p class="system-designation">Real-Time Sports Auction Platform</p>
+
+      <div class="system-visual">
+        <div class="system-screenshot" data-image="assets/proj-kj001.svg">
+          <img src="assets/proj-kj001.svg" alt="LiveAuction Pro Dashboard" loading="lazy">
+          <span class="screenshot-expand">⤢</span>
+        </div>
+      </div>
 
       <div class="system-details">
         <div class="detail-group">
@@ -259,7 +265,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     </article>
 
     <!-- System KJ-002 -->
-    <article id="system-kj002" class="stellar-system systems-type">
+    <article id="system-kj002" class="stellar-system systems-type" data-system-id="kj002">
       <div class="system-header">
         <div class="catalog-number">KJ-002</div>
         <div class="system-classification">
@@ -269,6 +275,13 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       </div>
       <h3 class="system-name">Eco-Cloud</h3>
       <p class="system-designation">Carbon-Aware Data Center Scheduler</p>
+
+      <div class="system-visual">
+        <div class="system-screenshot" data-image="assets/proj-kj002.svg">
+          <img src="assets/proj-kj002.svg" alt="Eco-Cloud Scheduler Code" loading="lazy">
+          <span class="screenshot-expand">⤢</span>
+        </div>
+      </div>
 
       <div class="system-details">
         <div class="detail-group">
@@ -301,7 +314,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     </article>
 
     <!-- System KJ-003 -->
-    <article id="system-kj003" class="stellar-system ml-type">
+    <article id="system-kj003" class="stellar-system ml-type" data-system-id="kj003">
       <div class="system-header">
         <div class="catalog-number">KJ-003</div>
         <div class="system-classification">
@@ -311,6 +324,13 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       </div>
       <h3 class="system-name">Aircraft Engine Health Monitoring</h3>
       <p class="system-designation">Predictive Maintenance System</p>
+
+      <div class="system-visual">
+        <div class="system-screenshot" data-image="assets/proj-kj003.svg">
+          <img src="assets/proj-kj003.svg" alt="Engine Health Monitoring Dashboard" loading="lazy">
+          <span class="screenshot-expand">⤢</span>
+        </div>
+      </div>
 
       <div class="system-details">
         <div class="detail-group">
@@ -342,7 +362,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     </article>
 
     <!-- System KJ-004 -->
-    <article id="system-kj004" class="stellar-system fullstack-type">
+    <article id="system-kj004" class="stellar-system fullstack-type" data-system-id="kj004">
       <div class="system-header">
         <div class="catalog-number">KJ-004</div>
         <div class="system-classification">
@@ -352,6 +372,13 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       </div>
       <h3 class="system-name">Aspira</h3>
       <p class="system-designation">AI-Powered Mental Wellness Platform</p>
+
+      <div class="system-visual">
+        <div class="system-screenshot" data-image="assets/proj-kj004.svg">
+          <img src="assets/proj-kj004.svg" alt="Aspira Mobile App Frames" loading="lazy">
+          <span class="screenshot-expand">⤢</span>
+        </div>
+      </div>
 
       <div class="system-details">
         <div class="detail-group">
@@ -385,7 +412,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     </article>
 
     <!-- System KJ-005 -->
-    <article id="system-kj005" class="stellar-system ml-type">
+    <article id="system-kj005" class="stellar-system ml-type" data-system-id="kj005">
       <div class="system-header">
         <div class="catalog-number">KJ-005</div>
         <div class="system-classification">
@@ -395,6 +422,13 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       </div>
       <h3 class="system-name">Document Intelligence Platform</h3>
       <p class="system-designation">Adobe India Hackathon 2025</p>
+
+      <div class="system-visual">
+        <div class="system-screenshot" data-image="assets/proj-kj005.svg">
+          <img src="assets/proj-kj005.svg" alt="Document Intelligence Platform UI" loading="lazy">
+          <span class="screenshot-expand">⤢</span>
+        </div>
+      </div>
 
       <div class="system-details">
         <div class="detail-group">
@@ -424,7 +458,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     </article>
 
     <!-- System KJ-006 -->
-    <article id="system-kj006" class="stellar-system db-type">
+    <article id="system-kj006" class="stellar-system db-type" data-system-id="kj006">
       <div class="system-header">
         <div class="catalog-number">KJ-006</div>
         <div class="system-classification">
@@ -434,6 +468,13 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       </div>
       <h3 class="system-name">IPL Auction Simulator</h3>
       <p class="system-designation">DBMS & OOP Coursework</p>
+
+      <div class="system-visual">
+        <div class="system-screenshot" data-image="assets/proj-kj006.svg">
+          <img src="assets/proj-kj006.svg" alt="IPL Auction Simulator ER Diagram" loading="lazy">
+          <span class="screenshot-expand">⤢</span>
+        </div>
+      </div>
 
       <div class="system-details">
         <div class="detail-group">
@@ -723,32 +764,52 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <div class="achievement-category">
       <h3 class="category-title">Certifications</h3>
       <div id="certList" class="cert-markers">
-        <div class="achievement-marker">
+        <div class="achievement-marker cert-with-image" data-cert-image="assets/cert-automata.svg">
+          <div class="cert-thumbnail">
+            <img src="assets/cert-automata.svg" alt="Automata and Computability Certificate" loading="lazy">
+            <span class="cert-zoom">⤢</span>
+          </div>
           <span class="marker-icon">◆</span>
           <div class="marker-content">
             <a href="https://www.coursera.org/account/accomplishments/records/D1815JFLY3EV" target="_blank" class="marker-title">Automata and Computability</a>
             <div class="marker-meta">BITS Pilani · 06.2026</div>
+            <a href="https://www.coursera.org/account/accomplishments/records/D1815JFLY3EV" target="_blank" class="cert-verify">Verify Certificate →</a>
           </div>
         </div>
-        <div class="achievement-marker">
+        <div class="achievement-marker cert-with-image" data-cert-image="assets/cert-os.svg">
+          <div class="cert-thumbnail">
+            <img src="assets/cert-os.svg" alt="Operating Systems Certificate" loading="lazy">
+            <span class="cert-zoom">⤢</span>
+          </div>
           <span class="marker-icon">◆</span>
           <div class="marker-content">
             <a href="https://www.coursera.org/account/accomplishments/records/NSK2BYW0ZMIB" target="_blank" class="marker-title">Operating Systems and You: Becoming a Power User</a>
             <div class="marker-meta">Google · 06.2026</div>
+            <a href="https://www.coursera.org/account/accomplishments/records/NSK2BYW0ZMIB" target="_blank" class="cert-verify">Verify Certificate →</a>
           </div>
         </div>
-        <div class="achievement-marker">
+        <div class="achievement-marker cert-with-image" data-cert-image="assets/cert-project-initiation.svg">
+          <div class="cert-thumbnail">
+            <img src="assets/cert-project-initiation.svg" alt="Project Initiation Certificate" loading="lazy">
+            <span class="cert-zoom">⤢</span>
+          </div>
           <span class="marker-icon">◆</span>
           <div class="marker-content">
             <a href="https://www.coursera.org/account/accomplishments/records/ZFDHIQCRFV4K" target="_blank" class="marker-title">Project Initiation: Starting a Successful Project</a>
             <div class="marker-meta">Google · 12.2025</div>
+            <a href="https://www.coursera.org/account/accomplishments/records/ZFDHIQCRFV4K" target="_blank" class="cert-verify">Verify Certificate →</a>
           </div>
         </div>
-        <div class="achievement-marker">
+        <div class="achievement-marker cert-with-image" data-cert-image="assets/cert-foundations.svg">
+          <div class="cert-thumbnail">
+            <img src="assets/cert-foundations.svg" alt="Foundations of Project Management Certificate" loading="lazy">
+            <span class="cert-zoom">⤢</span>
+          </div>
           <span class="marker-icon">◆</span>
           <div class="marker-content">
             <a href="https://www.coursera.org/account/accomplishments/verify/MUARNH3VJNFU" target="_blank" class="marker-title">Foundations of Project Management</a>
             <div class="marker-meta">Google · 11.2025</div>
+            <a href="https://www.coursera.org/account/accomplishments/verify/MUARNH3VJNFU" target="_blank" class="cert-verify">Verify Certificate →</a>
           </div>
         </div>
       </div>
@@ -779,10 +840,17 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <div class="achievement-category">
       <h3 class="category-title">Publications</h3>
       <div id="pubList" class="pub-markers">
-        <div class="publication-marker">
-          <div class="pub-meta">Springer · 06.2026</div>
-          <div class="pub-title">"Comparative Evaluation of Models for Aircraft Engine RUL Prediction"</div>
-          <div class="pub-note">Co-authored research on predictive-maintenance modeling</div>
+        <div class="publication-marker pub-with-image" data-pub-image="assets/pub-springer.svg">
+          <div class="pub-cover">
+            <img src="assets/pub-springer.svg" alt="Springer Paper Cover - Aircraft Engine RUL Prediction" loading="lazy">
+            <span class="pub-zoom">⤢</span>
+          </div>
+          <div class="pub-content">
+            <div class="pub-meta">Springer · 06.2026</div>
+            <div class="pub-title">"Comparative Evaluation of Models for Aircraft Engine RUL Prediction"</div>
+            <div class="pub-note">Co-authored research on predictive-maintenance modeling</div>
+            <a href="#" class="pub-doi" target="_blank">DOI: 10.1007/xxx.xxx.xxx.xxx</a>
+          </div>
         </div>
       </div>
       <div id="extraPubs"></div>
@@ -866,6 +934,73 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     </div>
   </div>
 </footer>
+
+<!-- Project Detail Modals -->
+<div class="modal-overlay" id="systemModal">
+  <div class="modal modal-system">
+    <span class="modal-close">✕ close</span>
+    <div class="system-modal-content">
+      <div class="system-modal-header">
+        <div class="system-modal-catalog">KJ-001</div>
+        <div class="system-modal-classification">
+          <span class="class-type">Type-F</span>
+          <span class="class-desc">Yellow Dwarf · Full-Stack</span>
+        </div>
+      </div>
+      <h3 class="system-modal-name">System Name</h3>
+      <p class="system-modal-designation">System Designation</p>
+
+      <div class="system-modal-visual">
+        <div class="system-modal-screenshot">
+          <img src="" alt="" loading="lazy">
+        </div>
+        <div class="system-modal-info">
+          <div class="system-modal-section">
+            <h4 class="modal-section-title">Core Systems</h4>
+            <ul class="system-modal-description"></ul>
+          </div>
+          <div class="system-modal-section">
+            <h4 class="modal-section-title">Technology Stack</h4>
+            <div class="system-modal-tech-orbit"></div>
+          </div>
+          <div class="system-modal-links"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Certification Lightbox -->
+<div class="modal-overlay" id="certLightbox">
+  <div class="modal modal-lightbox">
+    <span class="modal-close">✕ close</span>
+    <div class="lightbox-content">
+      <img src="" alt="" loading="lazy">
+      <a href="#" target="_blank" class="lightbox-verify">Verify on Coursera →</a>
+    </div>
+  </div>
+</div>
+
+<!-- Publication Lightbox -->
+<div class="modal-overlay" id="pubLightbox">
+  <div class="modal modal-lightbox">
+    <span class="modal-close">✕ close</span>
+    <div class="lightbox-content">
+      <img src="" alt="" loading="lazy">
+      <a href="#" target="_blank" class="lightbox-doi">View Publication →</a>
+    </div>
+  </div>
+</div>
+
+<!-- Screenshot Lightbox -->
+<div class="modal-overlay" id="screenshotLightbox">
+  <div class="modal modal-lightbox">
+    <span class="modal-close">✕ close</span>
+    <div class="lightbox-content">
+      <img src="" alt="" loading="lazy">
+    </div>
+  </div>
+</div>
 
 <!-- Admin Panel (preserved from original) -->
 <div class="admin-fab" id="adminFab" title="Admin login">🔒</div>

@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="100%" stop-color="#11151f"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f4d58d"/>
+      <stop offset="100%" stop-color="#a8c5e6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- Mobile app frames -->
+  <g>
+    <!-- Phone 1 -->
+    <rect x="80" y="80" width="180" height="360" rx="20" fill="#080a10" stroke="#1a4d5c" stroke-width="2"/>
+    <rect x="90" y="95" width="160" height="330" rx="12" fill="#11151f"/>
+    <circle cx="170" cy="115" r="5" fill="#1a4d5c"/>
+    <!-- Chat interface -->
+    <rect x="100" y="130" width="140" height="30" rx="4" fill="#0a0d14" stroke="#f4d58d" stroke-width="1"/>
+    <text x="170" y="150" text-anchor="middle" font-family="monospace" font-size="9" fill="#f4d58d">AI Counselor</text>
+    <rect x="100" y="170" width="140" height="80" fill="#1a4d5c" opacity="0.3" rx="4"/>
+    <text x="170" y="215" text-anchor="middle" font-family="monospace" font-size="8" fill="#c5d1d9" width="120">"How are you feeling today?"</text>
+    <rect x="100" y="260" width="80" height="25" rx="12" fill="#f4d58d" opacity="0.3"/>
+    <text x="140" y="277" text-anchor="middle" font-family="monospace" font-size="7" fill="#f4d58d">I'm anxious</text>
+    <rect x="100" y="300" width="100" height="25" rx="12" fill="#a8c5e6" opacity="0.3"/>
+    <text x="150" y="317" text-anchor="middle" font-family="monospace" font-size="7" fill="#a8c5e6">Talk to mentor</text>
+    <rect x="100" y="340" width="140" height="30" rx="4" fill="url(#accentGrad)"/>
+    <text x="170" y="360" text-anchor="middle" font-family="monospace" font-size="8" fill="#0a0d14" font-weight="bold">Send</text>
+  </g>
+
+  <g>
+    <!-- Phone 2 -->
+    <rect x="300" y="80" width="180" height="360" rx="20" fill="#080a10" stroke="#1a4d5c" stroke-width="2"/>
+    <rect x="310" y="95" width="160" height="330" rx="12" fill="#11151f"/>
+    <circle cx="390" cy="115" r="5" fill="#1a4d5c"/>
+    <!-- Mood tracking -->
+    <text x="390" y="135" text-anchor="middle" font-family="Satoshi, sans-serif" font-size="12" fill="#e67350" font-weight="bold">Mood Tracker</text>
+    <g font-family="monospace" font-size="10">
+      <text x="330" y="165" fill="#e67350">😊</text><text x="370" y="165" fill="#c5d1d9">8/10</text>
+      <text x="330" y="190" fill="#f4d58d">😐</text><text x="370" y="190" fill="#c5d1d9">5/10</text>
+      <text x="330" y="215" fill="#a8c5e6">😔</text><text x="370" y="215" fill="#c5d1d9">3/10</text>
+      <text x="330" y="240" fill="#4ade80">😊</text><text x="370" y="240" fill="#c5d1d9">7/10</text>
+      <text x="330" y="265" fill="#c084fc">😌</text><text x="370" y="265" fill="#c5d1d9">6/10</text>
+    </g>
+    <!-- Chart -->
+    <rect x="320" y="290" width="140" height="100" fill="#0a0d14" stroke="#1a4d5c" stroke-width="1" rx="4"/>
+    <path d="M330,370 L345,340 L360,355 L375,330 L390,345 L405,320 L420,335 L435,310" fill="none" stroke="#e67350" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="435" cy="310" r="3" fill="#e67350"/>
+  </g>
+
+  <g>
+    <!-- Phone 3 -->
+    <rect x="520" y="80" width="180" height="360" rx="20" fill="#080a10" stroke="#1a4d5c" stroke-width="2"/>
+    <rect x="530" y="95" width="160" height="330" rx="12" fill="#11151f"/>
+    <circle cx="610" cy="115" r="5" fill="#1a4d5c"/>
+    <!-- Mentor booking -->
+    <text x="610" y="135" text-anchor="middle" font-family="Satoshi, sans-serif" font-size="12" fill="#a8c5e6" font-weight="bold">Mentor Booking</text>
+    <rect x="540" y="150" width="140" height="90" fill="#1a4d5c" opacity="0.3" rx="4"/>
+    <text x="610" y="175" text-anchor="middle" font-family="monospace" font-size="9" fill="#a8c5e6" font-weight="bold">Dr. Sarah Chen</text>
+    <text x="610" y="195" text-anchor="middle" font-family="monospace" font-size="8" fill="#c5d1d9">Clinical Psychologist</text>
+    <text x="610" y="215" text-anchor="middle" font-family="monospace" font-size="8" fill="#f4d58d">Available: Tomorrow 2 PM</text>
+    <rect x="540" y="260" width="140" height="35" rx="4" fill="url(#accentGrad)"/>
+    <text x="610" y="285" text-anchor="middle" font-family="monospace" font-size="9" fill="#0a0d14" font-weight="bold">Book Session</text>
+    <text x="610" y="320" text-anchor="middle" font-family="monospace" font-size="8" fill="#c5d1d9" opacity="0.7">90% coord. effort reduced</text>
+  </g>
+
+  <!-- Type badge -->
+  <rect x="580" y="460" width="80" height="22" rx="11" fill="#f4d58d" opacity="0.2" stroke="#f4d58d" stroke-width="1"/>
+  <text x="620" y="475" text-anchor="middle" font-family="monospace" font-size="9" fill="#f4d58d" font-weight="bold">Type-G</text>
+
+  <!-- Tech badges -->
+  <g font-family="monospace" font-size="8" fill="#1a4d5c" transform="translate(70, 460)">
+    <rect width="70" height="18" rx="3" fill="#11151f" stroke="#c084fc"/>
+    <text x="35" y="13" text-anchor="middle" fill="#c084fc">Gemini API</text>
+    <rect x="80" width="70" height="18" rx="3" fill="#11151f" stroke="#a8c5e6"/>
+    <text x="115" y="13" text-anchor="middle" fill="#a8c5e6">Firebase</text>
+    <rect x="160" width="50" height="18" rx="3" fill="#11151f" stroke="#4ade80"/>
+    <text x="185" y="13" text-anchor="middle" fill="#4ade80">React</text>
+  </g>
+</svg>

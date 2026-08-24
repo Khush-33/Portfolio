@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="certBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="100%" stop-color="#11151f"/>
+    </linearGradient>
+    <linearGradient id="purpleBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="sealPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#certBg)"/>
+  <rect x="20" y="20" width="760" height="560" fill="none" stroke="url(#purpleBorder)" stroke-width="3"/>
+  <rect x="30" y="30" width="740" height="540" fill="none" stroke="#1a4d5c" stroke-width="1"/>
+
+  <g stroke="url(#purpleBorder)" stroke-width="2" fill="none">
+    <path d="M50,50 L80,50 M50,50 L50,80"/>
+    <path d="M750,50 L720,50 M750,50 L750,80"/>
+    <path d="M50,550 L80,550 M50,550 L50,520"/>
+    <path d="M750,550 L720,550 M750,550 L750,520"/>
+  </g>
+
+  <text x="400" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#c084fc" font-weight="bold" letter-spacing="2">GOOGLE CAREER CERTIFICATE</text>
+
+  <line x1="200" y1="105" x2="600" y2="105" stroke="url(#purpleBorder)" stroke-width="1.5"/>
+
+  <text x="400" y="145" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#c5d1d9" opacity="0.8">This is to certify that</text>
+
+  <text x="400" y="185" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#ffffff" font-weight="bold">Khush Jain</text>
+
+  <text x="400" y="230" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#c5d1d9" opacity="0.8">has successfully completed</text>
+
+  <text x="400" y="275" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#c084fc" font-weight="bold" font-style="italic">Foundations of</text>
+  <text x="400" y="305" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#c084fc" font-weight="bold" font-style="italic">Project Management</text>
+
+  <text x="400" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#f4d58d" font-weight="bold">Google</text>
+
+  <text x="400" y="395" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#c5d1d9" opacity="0.7">November 2025</text>
+
+  <g transform="translate(400, 460)">
+    <circle r="45" fill="none" stroke="url(#sealPurple)" stroke-width="2"/>
+    <circle r="37" fill="none" stroke="url(#sealPurple)" stroke-width="1" stroke-dasharray="4,4"/>
+    <text x="0" y="5" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#c084fc" font-weight="bold" letter-spacing="1">GOOGLE</text>
+    <text x="0" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" fill="#c5d1d9">CAREER CERTIFICATES</text>
+  </g>
+
+  <text x="400" y="535" text-anchor="middle" font-family="monospace" font-size="11" fill="#1a4d5c">Verification ID: MUARNH3VJNFU</text>
+
+  <g transform="translate(60, 530)">
+    <rect width="80" height="20" rx="3" fill="#1a4d5c"/>
+    <text x="40" y="14" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#c084fc" font-weight="bold">COURSERA</text>
+  </g>
+
+  <line x1="480" y1="480" x2="720" y2="480" stroke="#c5d1d9" stroke-width="1" opacity="0.5"/>
+  <text x="600" y="498" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#c5d1d9" opacity="0.6">Authorized Signature</text>
+
+  <rect x="20" y="20" width="760" height="4" fill="url(#purpleBorder)"/>
+</svg>

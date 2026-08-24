@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <radialGradient id="deepSpace" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="50%" stop-color="#080a10"/>
+      <stop offset="100%" stop-color="#050608"/>
+    </radialGradient>
+    <radialGradient id="nebulaCore" cx="35%" cy="40%" r="25%">
+      <stop offset="0%" stop-color="#1a3d5c" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#1a4d5c" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0a0d14" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebulaWarm" cx="70%" cy="65%" r="20%">
+      <stop offset="0%" stop-color="#2d2a1e" stop-opacity="0.12"/>
+      <stop offset="50%" stop-color="#3d2e1a" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#0a0d14" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="starGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a8c5e6" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#a8c5e6" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#a8c5e6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="starGlowWarm" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f4d58d" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#f4d58d" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#f4d58d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="starGlowHot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e67350" stop-opacity="1"/>
+      <stop offset="40%" stop-color="#e67350" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#e67350" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Deep space base -->
+  <rect width="1920" height="1080" fill="url(#deepSpace)"/>
+
+  <!-- Large nebula structures -->
+  <ellipse cx="672" cy="432" rx="480" ry="320" fill="url(#nebulaCore)" transform="rotate(-15 672 432)"/>
+  <ellipse cx="1344" cy="702" rx="384" ry="240" fill="url(#nebulaWarm)" transform="rotate(25 1344 702)"/>
+
+  <!-- Subtle dust lanes -->
+  <path d="M200,200 Q600,300 900,250 Q1200,200 1500,350 Q1800,500 1700,800" fill="none" stroke="#080a10" stroke-width="60" opacity="0.3"/>
+  <path d="M100,600 Q400,700 800,650 Q1100,600 1400,800 Q1600,950 1500,1100" fill="none" stroke="#080a10" stroke-width="40" opacity="0.2"/>
+
+  <!-- Bright stars (hero stars) -->
+  <circle cx="384" cy="216" r="3" fill="url(#starGlow)"/>
+  <circle cx="384" cy="216" r="1" fill="#ffffff"/>
+
+  <circle cx="1152" cy="180" r="2.5" fill="url(#starGlowWarm)"/>
+  <circle cx="1152" cy="180" r="0.8" fill="#ffffff"/>
+
+  <circle cx="1536" cy="432" r="2" fill="url(#starGlowHot)"/>
+  <circle cx="1536" cy="432" r="0.7" fill="#ffffff"/>
+
+  <circle cx="576" cy="648" r="2.5" fill="url(#starGlow)"/>
+  <circle cx="576" cy="648" r="0.8" fill="#ffffff"/>
+
+  <circle cx="1344" cy="900" r="2" fill="url(#starGlowWarm)"/>
+  <circle cx="1344" cy="900" r="0.7" fill="#ffffff"/>
+
+  <circle cx="1728" cy="288" r="1.5" fill="url(#starGlow)"/>
+  <circle cx="1728" cy="288" r="0.5" fill="#ffffff"/>
+
+  <!-- Star field - algorithmic distribution -->
+  <g fill="#ffffff" opacity="0.6">
+    <!-- Cluster 1 (upper left) -->
+    <circle cx="192" cy="162" r="0.8"/>
+    <circle cx="240" cy="108" r="0.6"/>
+    <circle cx="288" cy="216" r="0.5"/>
+    <circle cx="336" cy="144" r="0.7"/>
+    <circle cx="144" cy="252" r="0.4"/>
+    <circle cx="432" cy="288" r="0.5"/>
+    <circle cx="96" cy="324" r="0.6"/>
+
+    <!-- Cluster 2 (upper right) -->
+    <circle cx="1440" cy="108" r="0.7"/>
+    <circle cx="1584" cy="162" r="0.5"/>
+    <circle cx="1728" cy="108" r="0.6"/>
+    <circle cx="1656" cy="216" r="0.4"/>
+    <circle cx="1800" cy="252" r="0.5"/>
+    <circle cx="1512" cy="324" r="0.6"/>
+
+    <!-- Cluster 3 (center) -->
+    <circle cx="960" cy="540" r="0.9"/>
+    <circle cx="864" cy="486" r="0.5"/>
+    <circle cx="1008" cy="594" r="0.6"/>
+    <circle cx="912" cy="504" r="0.4"/>
+    <circle cx="1056" cy="648" r="0.5"/>
+
+    <!-- Cluster 4 (lower left) -->
+    <circle cx="288" cy="756" r="0.7"/>
+    <circle cx="192" cy="864" r="0.5"/>
+    <circle cx="384" cy="810" r="0.6"/>
+    <circle cx="432" cy="918" r="0.4"/>
+    <circle cx="144" cy="972" r="0.5"/>
+
+    <!-- Cluster 5 (lower right) -->
+    <circle cx="1632" cy="756" r="0.6"/>
+    <circle cx="1728" cy="864" r="0.5"/>
+    <circle cx="1536" cy="918" r="0.4"/>
+    <circle cx="1824" cy="972" r="0.6"/>
+    <circle cx="1440" cy="810" r="0.5"/>
+
+    <!-- Sparse field stars -->
+    <circle cx="480" cy="360" r="0.3" opacity="0.4"/>
+    <circle cx="720" cy="270" r="0.3" opacity="0.4"/>
+    <circle cx="1200" cy="360" r="0.3" opacity="0.4"/>
+    <circle cx="1440" cy="450" r="0.3" opacity="0.4"/>
+    <circle cx="600" cy="630" r="0.3" opacity="0.4"/>
+    <circle cx="1320" cy="630" r="0.3" opacity="0.4"/>
+    <circle cx="360" cy="720" r="0.3" opacity="0.4"/>
+    <circle cx="1560" cy="720" r="0.3" opacity="0.4"/>
+    <circle cx="240" cy="450" r="0.3" opacity="0.3"/>
+    <circle cx="1680" cy="540" r="0.3" opacity="0.3"/>
+  </g>
+
+  <!-- Faint colored stars (spectral types) -->
+  <g>
+    <!-- Type O - blue white -->
+    <circle cx="480" cy="180" r="1.2" fill="#a8c5e6" opacity="0.7"/>
+    <circle cx="1248" cy="540" r="1" fill="#a8c5e6" opacity="0.6"/>
+    <circle cx="720" cy="900" r="0.8" fill="#a8c5e6" opacity="0.5"/>
+
+    <!-- Type F/G - yellow white -->
+    <circle cx="864" cy="180" r="1" fill="#f4d58d" opacity="0.7"/>
+    <circle cx="1584" cy="360" r="1.2" fill="#f4d58d" opacity="0.6"/>
+    <circle cx="432" cy="540" r="0.9" fill="#f4d58d" opacity="0.5"/>
+
+    <!-- Type K - orange -->
+    <circle cx="1152" cy="720" r="1.2" fill="#e67350" opacity="0.6"/>
+    <circle cx="576" cy="360" r="1" fill="#e67350" opacity="0.5"/>
+    <circle cx="1728" cy="648" r="0.8" fill="#e67350" opacity="0.5"/>
+
+    <!-- Type M - red -->
+    <circle cx="288" cy="468" r="0.8" fill="#4a7c9e" opacity="0.5"/>
+    <circle cx="1440" cy="828" r="0.7" fill="#4a7c9e" opacity="0.4"/>
+  </g>
+
+  <!-- Diffuse glow regions -->
+  <ellipse cx="960" cy="540" rx="800" ry="400" fill="#1a4d5c" opacity="0.02"/>
+  <ellipse cx="960" cy="540" rx="1200" ry="600" fill="#2d2a1e" opacity="0.015"/>
+
+  <!-- Vignette -->
+  <rect width="1920" height="1080" fill="url(#vignette)"/>
+  <defs>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="70%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="#050608" stop-opacity="0.4"/>
+    </radialGradient>
+  </defs>
+</svg>

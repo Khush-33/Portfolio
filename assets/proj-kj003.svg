@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="100%" stop-color="#11151f"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e67350"/>
+      <stop offset="100%" stop-color="#f4d58d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- Dashboard style -->
+  <rect x="50" y="50" width="700" height="400" rx="8" fill="#080a10" stroke="#1a4d5c" stroke-width="1"/>
+  <rect x="50" y="50" width="700" height="36" rx="8" fill="#11151f" stroke="#1a4d5c" stroke-width="1"/>
+  <circle cx="75" cy="68" r="6" fill="#e67350" opacity="0.8"/>
+  <circle cx="95" cy="68" r="6" fill="#f4d58d" opacity="0.8"/>
+  <circle cx="115" cy="68" r="6" fill="#4ade80" opacity="0.8"/>
+  <text x="150" y="73" font-family="monospace" font-size="11" fill="#c5d1d9">engine-health-monitor  dashboard.html</text>
+
+  <!-- Left: Sensor visualization -->
+  <rect x="70" y="110" width="360" height="320" fill="#0a0d14" rx="4" stroke="#1a4d5c" stroke-width="1"/>
+  <text x="100" y="135" font-family="Satoshi, sans-serif" font-size="14" fill="#e67350" font-weight="bold">Sensor Telemetry (21 Channels)</text>
+
+  <!-- Mini chart lines -->
+  <g stroke-width="1.5" fill="none" stroke-linecap="round">
+    <path d="M90,180 Q120,160 150,170 Q180,150 210,180 Q240,140 270,175 Q300,155 330,170 Q360,145 390,165 Q420,150" stroke="#e67350" opacity="0.8"/>
+    <path d="M90,220 Q120,230 150,215 Q180,240 210,220 Q240,250 270,225 Q300,240 330,230 Q360,255 390,235 Q420,240" stroke="#f4d58d" opacity="0.8"/>
+    <path d="M90,260 Q120,250 150,265 Q180,245 210,260 Q240,240 270,255 Q300,245 330,250 Q360,235 390,245 Q420,255" stroke="#a8c5e6" opacity="0.8"/>
+    <path d="M90,300 Q120,310 150,295 Q180,320 210,300 Q240,330 270,305 Q300,320 330,310 Q360,335 390,315 Q420,325" stroke="#4ade80" opacity="0.8"/>
+    <path d="M90,340 Q120,330 150,345 Q180,325 210,340 Q240,320 270,335 Q300,325 330,330 Q360,315 390,325 Q420,330" stroke="#c084fc" opacity="0.8"/>
+  </g>
+
+  <text x="100" y="375" font-family="monospace" font-size="9" fill="#c5d1d9" opacity="0.6">T24  T30  T50  P30  Nf  Nc  ... (21 sensors)</text>
+
+  <!-- Right: Prediction panel -->
+  <rect x="460" y="110" width="270" height="320" fill="#0a0d14" rx="4" stroke="#e67350" stroke-width="1.5"/>
+  <text x="490" y="135" font-family="Satoshi, sans-serif" font-size="14" fill="#e67350" font-weight="bold">RUL Prediction</text>
+
+  <rect x="480" y="155" width="230" height="120" fill="#11151f" rx="4"/>
+  <text x="595" y="190" text-anchor="middle" font-family="monospace" font-size="48" fill="#e67350" font-weight="bold">142</text>
+  <text x="595" y="220" text-anchor="middle" font-family="monospace" font-size="11" fill="#c5d1d9">cycles remaining</text>
+  <text x="595" y="240" text-anchor="middle" font-family="monospace" font-size="10" fill="#f4d58d">Confidence: 94.3%</text>
+
+  <rect x="480" y="290" width="230" height="40" rx="4" fill="url(#accentGrad)"/>
+  <text x="595" y="315" text-anchor="middle" font-family="Satoshi, sans-serif" font-size="12" fill="#0a0d14" font-weight="bold">Run Inference</text>
+
+  <rect x="480" y="345" width="230" height="40" rx="4" fill="transparent" stroke="#a8c5e6" stroke-width="1"/>
+  <text x="595" y="370" text-anchor="middle" font-family="Satoshi, sans-serif" font-size="12" fill="#a8c5e6">View History</text>
+
+  <text x="490" y="400" font-family="monospace" font-size="9" fill="#c5d1d9" opacity="0.6">Model: LSTM (50-step, 18 features)</text>
+  <text x="490" y="415" font-family="monospace" font-size="9" fill="#c5d1d9" opacity="0.6">RMSE: 12.7 cycles (15% improvement)</text>
+
+  <!-- Type badge -->
+  <rect x="580" y="430" width="80" height="22" rx="11" fill="#e67350" opacity="0.2" stroke="#e67350" stroke-width="1"/>
+  <text x="620" y="445" text-anchor="middle" font-family="monospace" font-size="9" fill="#e67350" font-weight="bold">Type-K</text>
+
+  <!-- Tech badges -->
+  <g font-family="monospace" font-size="8" fill="#1a4d5c">
+    <rect x="70" y="430" width="50" height="18" rx="3" fill="#11151f" stroke="#e67350"/>
+    <text x="95" y="443" text-anchor="middle" fill="#e67350">LSTM</text>
+
+    <rect x="130" y="430" width="50" height="18" rx="3" fill="#11151f" stroke="#f4d58d"/>
+    <text x="155" y="443" text-anchor="middle" fill="#f4d58d">Flask</text>
+
+    <rect x="190" y="430" width="80" height="18" rx="3" fill="#11151f" stroke="#a8c5e6"/>
+    <text x="230" y="443" text-anchor="middle" fill="#a8c5e6">Time Series</text>
+
+    <rect x="280" y="430" width="80" height="18" rx="3" fill="#11151f" stroke="#c084fc"/>
+    <text x="320" y="443" text-anchor="middle" fill="#c084fc">Springer Pub</text>
+  </g>
+</svg>

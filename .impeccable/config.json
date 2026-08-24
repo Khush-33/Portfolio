@@ -17,6 +17,15 @@
         ],
         "createdAt": "2026-08-24T07:26:15.530Z",
         "reason": "Domain-appropriate: Celestial coordinate grid overlay is literal measurement surface context for interstellar cartography archive. Coordinate systems (RA/DEC) are central to the navigation metaphor, not decorative."
+      },
+      {
+        "rule": "layout-transition",
+        "value": "*",
+        "files": [
+          "motion.js"
+        ],
+        "createdAt": "2026-08-24T08:13:12.400Z",
+        "reason": "Fixed-position overlays with pointer-events:none (cursor glow, scroll progress). No document flow impact. Standard UI feedback patterns with negligible perf cost."
       }
     ]
   }

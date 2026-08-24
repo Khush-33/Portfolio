@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="100%" stop-color="#11151f"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f4d58d"/>
+      <stop offset="100%" stop-color="#a8c5e6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- Browser chrome -->
+  <rect x="50" y="50" width="700" height="400" rx="8" fill="#080a10" stroke="#1a4d5c" stroke-width="1"/>
+  <rect x="50" y="50" width="700" height="36" rx="8" fill="#11151f" stroke="#1a4d5c" stroke-width="1"/>
+  <circle cx="75" cy="68" r="6" fill="#e67350" opacity="0.8"/>
+  <circle cx="95" cy="68" r="6" fill="#f4d58d" opacity="0.8"/>
+  <circle cx="115" cy="68" r="6" fill="#4ade80" opacity="0.8"/>
+  <rect x="300" y="58" width="200" height="20" rx="4" fill="#0a0d14" stroke="#1a4d5c" stroke-width="1"/>
+  <text x="310" y="72" font-family="monospace" font-size="10" fill="#c5d1d9" opacity="0.6">proauction-livid.vercel.app</text>
+
+  <!-- Dashboard content -->
+  <rect x="70" y="110" width="320" height="300" fill="#0a0d14" stroke="#1a4d5c" stroke-width="1" rx="4"/>
+  <text x="100" y="135" font-family="Satoshi, sans-serif" font-size="14" fill="#f4d58d" font-weight="bold">Live Auction Dashboard</text>
+  <text x="100" y="155" font-family="monospace" font-size="10" fill="#c5d1d9" opacity="0.7">IPL 2025 Season · Live Session</text>
+
+  <!-- Team cards -->
+  <g font-family="monospace" font-size="10">
+    <rect x="90" y="175" width="280" height="40" fill="#11151f" stroke="#f4d58d" stroke-width="1" rx="3"/>
+    <text x="105" y="198" fill="#f4d58d">Chennai Super Kings</text>
+    <text x="280" y="198" fill="#c5d1d9">₹ 42.5 Cr</text>
+
+    <rect x="90" y="225" width="280" height="40" fill="#11151f" stroke="#a8c5e6" stroke-width="1" rx="3"/>
+    <text x="105" y="248" fill="#a8c5e6">Mumbai Indians</text>
+    <text x="280" y="248" fill="#c5d1d9">₹ 38.2 Cr</text>
+
+    <rect x="90" y="275" width="280" height="40" fill="#11151f" stroke="#e67350" stroke-width="1" rx="3"/>
+    <text x="105" y="298" fill="#e67350">Royal Challengers</text>
+    <text x="280" y="298" fill="#c5d1d9">₹ 35.8 Cr</text>
+
+    <rect x="90" y="325" width="280" height="40" fill="#11151f" stroke="#4ade80" stroke-width="1" rx="3"/>
+    <text x="105" y="348" fill="#4ade80">Kolkata Knight Riders</text>
+    <text x="280" y="348" fill="#c5d1d9">₹ 31.4 Cr</text>
+  </g>
+
+  <!-- Right panel - bidding -->
+  <rect x="420" y="110" width="320" height="300" fill="#0a0d14" stroke="#1a4d5c" stroke-width="1" rx="4"/>
+  <text x="450" y="135" font-family="Satoshi, sans-serif" font-size="14" fill="#a8c5e6" font-weight="bold">Active Bidding</text>
+
+  <rect x="440" y="155" width="280" height="100" fill="#11151f" rx="4"/>
+  <text x="460" y="180" font-family="Satoshi, sans-serif" font-size="16" fill="#ffffff" font-weight="bold">Virat Kohli</text>
+  <text x="460" y="200" font-family="monospace" font-size="10" fill="#c5d1d9">Base: ₹ 2.0 Cr · Current: ₹ 14.5 Cr</text>
+  <text x="460" y="220" font-family="monospace" font-size="10" fill="#f4d58d">Max Safe Bid: ₹ 16.2 Cr</text>
+
+  <rect x="440" y="270" width="130" height="40" rx="4" fill="url(#accentGrad)"/>
+  <text x="505" y="295" text-anchor="middle" font-family="Satoshi, sans-serif" font-size="12" fill="#0a0d14" font-weight="bold">PLACE BID</text>
+
+  <rect x="590" y="270" width="130" height="40" rx="4" fill="transparent" stroke="#e67350" stroke-width="1"/>
+  <text x="655" y="295" text-anchor="middle" font-family="Satoshi, sans-serif" font-size="12" fill="#e67350">PASS</text>
+
+  <!-- Tech badges -->
+  <g font-family="monospace" font-size="8" fill="#1a4d5c">
+    <rect x="70" y="430" width="60" height="18" rx="3" fill="#11151f" stroke="#f4d58d"/>
+    <text x="100" y="443" text-anchor="middle" fill="#f4d58d">React</text>
+
+    <rect x="140" y="430" width="70" height="18" rx="3" fill="#11151f" stroke="#a8c5e6"/>
+    <text x="175" y="443" text-anchor="middle" fill="#a8c5e6">Firebase</text>
+
+    <rect x="220" y="430" width="60" height="18" rx="3" fill="#11151f" stroke="#4ade80"/>
+    <text x="250" y="443" text-anchor="middle" fill="#4ade80">Vercel</text>
+
+    <rect x="290" y="430" width="55" height="18" rx="3" fill="#11151f" stroke="#e67350"/>
+    <text x="317" y="443" text-anchor="middle" fill="#e67350">CI/CD</text>
+  </g>
+
+  <!-- Type badge -->
+  <rect x="580" y="430" width="80" height="22" rx="11" fill="#f4d58d" opacity="0.2" stroke="#f4d58d" stroke-width="1"/>
+  <text x="620" y="445" text-anchor="middle" font-family="monospace" font-size="9" fill="#f4d58d" font-weight="bold">Type-F</text>
+</svg>

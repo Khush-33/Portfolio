@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800">
+  <defs>
+    <linearGradient id="paperBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="100%" stop-color="#11151f"/>
+    </linearGradient>
+    <linearGradient id="springerBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e67350"/>
+      <stop offset="50%" stop-color="#f4d58d"/>
+      <stop offset="100%" stop-color="#e67350"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a4d5c"/>
+      <stop offset="100%" stop-color="#0a0d14"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#paperBg)"/>
+  <rect x="10" y="10" width="580" height="780" fill="none" stroke="url(#springerBorder)" stroke-width="2"/>
+
+  <!-- Springer header -->
+  <rect x="10" y="10" width="580" height="60" fill="url(#headerGrad)"/>
+  <text x="300" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#f4d58d" font-weight="bold" letter-spacing="1">SPRINGER</text>
+  <text x="300" y="62" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#c5d1d9" opacity="0.7">Lecture Notes in Computer Science</text>
+
+  <!-- Journal info -->
+  <rect x="30" y="90" width="540" height="40" fill="#1a4d5c" opacity="0.3" rx="4"/>
+  <text x="300" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#a8c5e6">Proceedings of the International Conference on Predictive Maintenance</text>
+  <text x="300" y="125" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#c5d1d9" opacity="0.7">Volume 14523 · June 2026 · DOI: 10.1007/978-3-031-XXXXX-X_XX</text>
+
+  <!-- Paper title -->
+  <text x="300" y="180" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#ffffff" font-weight="bold" width="500">
+    <tspan x="300" dy="0">Comparative Evaluation of Models</tspan>
+    <tspan x="300" dy="28">for Aircraft Engine RUL Prediction</tspan>
+  </text>
+
+  <!-- Authors -->
+  <text x="300" y="240" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="#f4d58d">Khush Jain, Anish Kshirsagar, et al.</text>
+  <text x="300" y="260" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c5d1d9" opacity="0.7">Vishwakarma Institute of Technology, Pune</text>
+
+  <!-- Abstract box -->
+  <rect x="50" y="290" width="500" height="280" fill="#11151f" stroke="#1a4d5c" stroke-width="1" rx="8"/>
+  <text x="300" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#a8c5e6" font-weight="bold">ABSTRACT</text>
+  <text x="70" y="350" width="460" font-family="Georgia, serif" font-size="12" fill="#c5d1d9" opacity="0.85" line-height="1.6">
+    <tspan x="70" dy="0">Predictive maintenance of aircraft engines is critical for aviation safety and operational</tspan>
+    <tspan x="70" dy="20">efficiency. This paper presents a comparative evaluation of multiple machine learning</tspan>
+    <tspan x="70" dy="40">architectures for Remaining Useful Life (RUL) estimation using the NASA C-MAPSS</tspan>
+    <tspan x="70" dy="60">dataset. We evaluate LSTM networks, GRU variants, Transformer-based models, and</tspan>
+    <tspan x="70" dy="80">hybrid ARIMA-LSTM ensembles across 21 sensor channels. Our LSTM model with</tspan>
+    <tspan x="70" dy="100">50-step sequences and 18 engineered features achieves a 15% improvement in</tspan>
+    <tspan x="70" dy="120">RMSE over baseline approaches. The deployed Flask REST API enables real-time</tspan>
+    <tspan x="70" dy="140">monitoring with sub-100ms inference latency.</tspan>
+  </text>
+
+  <!-- Keywords -->
+  <text x="70" y="585" font-family="Arial, sans-serif" font-size="11" fill="#a8c5e6" font-weight="bold">Keywords: </text>
+  <text x="150" y="585" font-family="Georgia, serif" font-size="11" fill="#c5d1d9">Predictive Maintenance, RUL Estimation, LSTM, C-MAPSS, Time Series Forecasting</text>
+
+  <!-- Visual element - chart placeholder -->
+  <rect x="100" y="600" width="400" height="160" fill="#0a0d14" stroke="#1a4d5c" stroke-width="1" rx="4"/>
+  <text x="300" y="630" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#c5d1d9" opacity="0.5">Model Performance Comparison (RMSE vs. Epochs)</text>
+  <!-- Simple chart bars -->
+  <g fill="#a8c5e6" opacity="0.7">
+    <rect x="130" y="700" width="35" height="40" rx="2"/>
+    <rect x="185" y="680" width="35" height="60" rx="2" fill="#f4d58d"/>
+    <rect x="240" y="660" width="35" height="80" rx="2" fill="#e67350"/>
+    <rect x="295" y="650" width="35" height="90" rx="2" fill="#4ade80"/>
+    <rect x="350" y="640" width="35" height="100" rx="2" fill="#a8c5e6"/>
+  </g>
+  <g font-family="monospace" font-size="8" fill="#c5d1d9" opacity="0.6">
+    <text x="147" y="750" text-anchor="middle">ARIMA</text>
+    <text x="202" y="750" text-anchor="middle">LSTM</text>
+    <text x="257" y="750" text-anchor="middle">GRU</text>
+    <text x="312" y="750" text-anchor="middle">Trans.</text>
+    <text x="367" y="750" text-anchor="middle">Ensemble</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="50" y1="770" x2="550" y2="770" stroke="#1a4d5c" stroke-width="0.5"/>
+  <text x="300" y="788" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#1a4d5c">© 2026 Springer Nature Switzerland AG · Published in LNCS Volume 14523</text>
+</svg>
