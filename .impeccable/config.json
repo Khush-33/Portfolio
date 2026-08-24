@@ -26,6 +26,17 @@
         ],
         "createdAt": "2026-08-24T08:13:12.400Z",
         "reason": "Fixed-position overlays with pointer-events:none (cursor glow, scroll progress). No document flow impact. Standard UI feedback patterns with negligible perf cost."
+      },
+      {
+        "rule": "broken-image",
+        "value": "modal-empty-src-intentional",
+        "createdAt": "2026-08-24T19:20:53.691Z"
+      },
+      {
+        "rule": "gradient-text",
+        "value": "specialist-title-gradient-intentional",
+        "createdAt": "2026-08-24T19:25:00.000Z",
+        "reason": "Intentional gradient on specialist title 'Systems & Full-Stack Engineer' per interstellar cartography theme - represents spectral classification colors (Type-O blue to Type-F gold). Not decorative AI tell; meaningful semantic mapping to stellar classification system."
       }
     ]
   }
