@@ -1,0 +1,101 @@
+{
+  "title": "Visual Direction for Khush Jain Portfolio",
+  "mode": "persuade",
+  "buildPath": {
+    "value": "comp",
+    "toggle": true
+  },
+  "assignedDirection": {
+    "id": "interstellar-cartography",
+    "kicker": "THE ROLL",
+    "thesis": "Khush's technical work charted as an interstellar navigation archive where each project is a discovered stellar system, skills map to spectral classifications, and the whole portfolio reads as a systematic exploration of technical space.",
+    "palette": "Deep void-black (#0a0d14) ground with true stellar photography. Spectral classification colors: hot blue-white for systems projects (#a8c5e6), warm yellow for full-stack (#f4d58d), orange-red for ML work (#e67350), deep blue for databases (#4a7c9e). Navigation elements in dim cyan (#1a4d5c) and metallic silver (#c5d1d9).",
+    "materials": "Real astrophotography (Hubble/JWST deep field imagery, not generated nebulae). Celestial coordinate grids as overlays. Traditional compass rose navigation markers. Spectral analysis data displays for metrics. Catalog numbering system.",
+    "type": "Geist Mono for coordinates, catalog numbers, and technical data. Satoshi for headers and body content. Maintains scientific precision without terminal aesthetic cliché.",
+    "firstViewport": "Full viewport height star field using real astrophotography. Upper left: Khush's professional photo as circular mission specialist badge (100px) with name in orbital ring. Center-right: large celestial coordinate readout showing portfolio 'position', below that 3-4 major project systems as labeled bright stellar objects with catalog numbers. Bottom: navigation compass rose showing sections as cardinal directions. Primary CTA: 'Chart Course' button as navigation plotting interface. Scale is cinematic and confident.",
+    "honestRisk": "Cartography/navigation metaphors are familiar in space UI. Distinguished by systematic spectral palette, real astrophotography requirement, and scientific rigor over game aesthetics.",
+    "raises": [
+      "Laboratory data precision (from Nixie Tube challenger): Achievement metrics as glowing spectral readouts - 150+ LeetCode as spectral analysis, 9.33 CGPA as luminosity classification, stats as stellar magnitude",
+      "Visible technical layering (from Décollage challenger): Project expansions show tech stack as concentric orbital rings, dependencies as satellites, architecture overlaid on star field",
+      "Gravitational lensing interaction (from Sleeping City challenger): Interactive elements create subtle physics-accurate spatial warping of background stars on hover"
+    ],
+    "comp": ".impeccable/mocks/decision/interstellar-cartography.png"
+  },
+  "pickCard": {
+    "id": "astrophotography-archive",
+    "kicker": "IMPECCABLE'S PICK",
+    "thesis": "Scientific archive of deep space imagery where projects become cataloged celestial objects with technical metadata, maintaining astrophotography's precision and wonder without navigation metaphors.",
+    "palette": "True deep space black with Hubble palette colors: hydrogen-alpha red (#ff6b5e), oxygen-III cyan (#4fd1c5), sulfur-II gold (#ffb020). Metallic silver for technical annotations (#d1dce5).",
+    "materials": "Hubble and JWST deep field photography. Scientific color mapping overlays. Catalog coordinate systems. Exposure metadata displays. Observatory log aesthetics.",
+    "type": "Space Grotesk for scientific labels and coordinates. IBM Plex Mono for technical data. Clean sans-serif for descriptions.",
+    "firstViewport": "Stunning deep space photograph fills viewport (nebula or star cluster). Khush's photo positioned as small mission badge with technical overlay. Projects appear as labeled catalog entries over the image with coordinate data. Clean scientific precision.",
+    "honestRisk": "This is my top-ranked direction and represents where most portfolio redesigns with space themes land. Scientific and beautiful, but the most conventional path in this category.",
+    "comp": ".impeccable/mocks/decision/astrophotography-archive.png"
+  },
+  "challengers": [
+    {
+      "id": "nixie-laboratory",
+      "verdict": "competitive",
+      "sourceId": "signals-instruments-nixie-laboratory-counter",
+      "case": "Laboratory instrumentation brings scientific credibility and makes numerical achievements (LeetCode, GPA, stats) immediately visible as glowing data. Strong for metrics-focused recruiting.",
+      "keptLine": "Laboratory data precision: raised the assigned direction to display metrics as scientific instrument readouts with spectral classification glow.",
+      "qualityBar": "https://impeccable.style/worlds/cards/signals-instruments-nixie-laboratory-counter.webp",
+      "qualityBarHero": "https://impeccable.style/worlds/cards/signals-instruments-nixie-laboratory-counter-hero.webp"
+    },
+    {
+      "id": "planetary-rover",
+      "verdict": "competitive",
+      "sourceId": "planetary-rover-mars-opportunity-mission-log",
+      "case": "Mars rover mission logs bring exploration narrative and technical logging aesthetics. Projects as planetary surveys resonates with systems-building positioning.",
+      "keptLine": "Already covered: The assigned direction is space-themed; rover exploration metaphor adds no new dimension.",
+      "qualityBar": "https://impeccable.style/worlds/cards/planetary-rover-mars-opportunity-mission-log.webp",
+      "qualityBarHero": "https://impeccable.style/worlds/cards/planetary-rover-mars-opportunity-mission-log-hero.webp"
+    }
+  ],
+  "declinedChallengers": [
+    {
+      "id": "endurance-racing",
+      "verdict": "declined",
+      "sourceId": "pop-culture-shelf-endurance-livery-garage",
+      "reason": "Racing culture doesn't resonate with technical recruiters; personality over professionalism. Metaphor obscures technical work.",
+      "keptLine": "Portable identity through systematic color: raised to use spectral classification palette across project types."
+    },
+    {
+      "id": "torn-billboard",
+      "verdict": "declined",
+      "sourceId": "design-canon-decollage-torn-billboard",
+      "reason": "Too artistic/abstract for recruiters scanning quickly. Depth metaphor doesn't communicate 'shipped systems' clearly.",
+      "keptLine": "Visible layering reveals structure: raised to show technical stack through visual layering in project expansions."
+    },
+    {
+      "id": "sleeping-city",
+      "verdict": "declined",
+      "sourceId": "dream-surreal-impossible-worlds-sleeping-city-fold",
+      "reason": "Surreal/dreamlike doesn't fit recruiter evaluation mindset. Abstract metaphor obscures technical evaluation.",
+      "keptLine": "Spatial deformation creates interest: raised to add subtle gravitational lensing around interactive elements."
+    }
+  ],
+  "canonCard": {
+    "id": "canon",
+    "thesis": "Professional developer portfolio following industry conventions: clean hero section with photo and introduction, featured projects in expandable cards, skills organized by category, GitHub stats integration, certifications gallery, contact form. Executed at the craft level of top portfolios from Linear, Stripe, or Vercel engineering teams.",
+    "palette": "Neutral modern: slate or zinc grays (#18181b to #fafafa) with one accent color chosen from brand-appropriate professional palette (indigo, emerald, or amber).",
+    "materials": "Clean geometric cards with subtle shadows. Professional photography. Icon library (Phosphor or Radix). Smooth transitions. No experimental materials.",
+    "type": "System font stack or professional sans (Inter, Geist, or DM Sans) for all text. Mono for code snippets only.",
+    "firstViewport": "Traditional hero: left-aligned headline and introduction paragraph, photo on right. Clear primary CTA button. Featured project cards visible below fold.",
+    "honestRisk": "This is the safest path and will be professional and effective, but won't stand out from other well-executed student portfolios. Choosing this means competing on content alone, not presentation."
+  },
+  "reroll": {
+    "enabled": true,
+    "steer": "Optional one-line direction for the next hand",
+    "registers": {
+      "plain": "Fresh hand, same spread of grounded and challenger directions",
+      "safer": "Conventional grounded directions plus the canon card, positioned against named professional portfolios",
+      "bolder": "Foreign forms only at full commitment - more experimental catalog directions"
+    }
+  },
+  "context": {
+    "product": "Developer portfolio for CS/AI-ML student targeting technical recruiters for internships",
+    "audience": "Tech recruiters scanning portfolios in 30-90 seconds on desktop",
+    "constraints": "Must use real photograph, real GitHub data, real certifications, preserve Firebase backend, avoid game UI tropes and terminal clichés"
+  }
+}
