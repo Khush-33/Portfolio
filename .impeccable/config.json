@@ -37,6 +37,16 @@
         "value": "specialist-title-gradient-intentional",
         "createdAt": "2026-08-24T19:25:00.000Z",
         "reason": "Intentional gradient on specialist title 'Systems & Full-Stack Engineer' per interstellar cartography theme - represents spectral classification colors (Type-O blue to Type-F gold). Not decorative AI tell; meaningful semantic mapping to stellar classification system."
+      },
+      {
+        "rule": "broken-image",
+        "value": "modal-lightbox-empty-src modal lightboxes (systemmodal, certlightbox, publightbox, screenshotlightbox) have empty src attributes that are populated dynamically via javascript when modals open. empty src prevents premature loading and layout shift. this is intentional design.",
+        "createdAt": "2026-08-25T04:51:22.938Z"
+      },
+      {
+        "rule": "gradient-text",
+        "value": "section-title-gradient-intentional section titles (charted systems, technology constellation, github observatory, achievement markers, contact coordinates) use the same spectral gradient as specialist title - represents the interstellar cartography theme's spectral classification palette. not decorative; semantically meaningful mapping to stellar spectral types.",
+        "createdAt": "2026-08-25T04:52:22.258Z"
       }
     ]
   }
